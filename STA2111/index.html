@@ -61,9 +61,9 @@ body {
 }
 .brand .logo {
     width: 32px; height: 32px;
-    background: var(--c-accent);
-    color: #fff;
-    border-radius: 8px;
+    background: #c7f1d8;
+    color: #123f30;
+    border-radius: 12px;
     display: grid;
     place-items: center;
     font-size: 18px;
@@ -105,7 +105,9 @@ body {
     display: flex;
     gap: 10px;
     margin-left: auto;
+    align-items: center;
 }
+.home-link { text-decoration: none; white-space: nowrap; display: inline-flex; align-items: center; }
 .btn {
     background: var(--c-accent);
     color: #fff;
@@ -577,7 +579,7 @@ figure.illustration figcaption strong {
     .main { padding: 24px 20px 60px; }
 }
 @media (max-width: 720px) {
-    .topbar { padding: 0 16px; height: 50px; }
+    .topbar { padding: 0 12px; height: 54px; gap: 8px; }
     .search-wrap { margin: 0 12px; max-width: none; }
     .actions { gap: 5px; }\n    .actions .btn { padding: 6px 8px; font-size: 11px; }\n    .home-link { display: none !important; }
     .brand { font-size: 14px; }
@@ -596,15 +598,16 @@ figure.illustration figcaption strong {
 
 <!-- ============ TOP BAR ============ -->
 <header class="topbar">
-    <a class="brand" href="#top">
-        <span class="logo">σ</span>
-        <span>STA2111 <span class="sub">· UTS Rangkuman</span></span>
+    <a class="brand" href="../" aria-label="Kembali ke beranda BioStudy">
+        <span class="logo">✳</span>
+        <span>BioStudy <span class="sub">/ STA2111</span></span>
     </a>
     <div class="search-wrap">
         <span class="icon">🔍</span>
         <input id="searchBox" type="search" placeholder="Cari konsep, rumus, atau istilah (mis. varians, RAL, kuartil)..." autocomplete="off">
     </div>
     <div class="actions">
+        <a class="btn secondary home-link" href="../">← Beranda</a>
         <button class="btn secondary" onclick="window.scrollTo({top: document.body.scrollHeight, behavior:'smooth'})">↓ Latihan</button>
         <button class="btn" onclick="window.print()">🖨 Cetak PDF</button>
     </div>
