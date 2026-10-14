@@ -8109,8 +8109,8 @@
       "Negara-negara dari kawasan yang sama memiliki tingkat kesehatan dan ekonomi yang identik",
       "Ada hubungan linier positif yang kuat, namun terdapat keragaman yang tinggi di antar grup negara"
     ],
-    "a": 3,
-    "e": "Scatter plot menunjukkan hubungan linier positif, namun juga mengungkapkan keragaman yang tinggi di antara kelompok, misalnya di antara negara-negara di Afrika Sub-Sahara.",
+    "a": 1,
+    "e": "Berdasarkan PDF, scatter plot income per hari dan angka kematian bayi menunjukkan hubungan negatif: semakin tinggi income, angka kematian bayi cenderung turun, namun terdapat keragaman yang tinggi di antara kelompok negara.",
     "topic": "Eksplorasi Data - Hubungan Antar Peubah",
     "source": "STA2111-Kuliah-04.pdf",
     "id": 605
@@ -8928,7 +8928,7 @@
       "False"
     ],
     "a": 1,
-    "e": "Metode survei adalah teknik pengumpulan data melalui interaksi langsung dengan responden, seperti melalui kuesioner atau wawancara.",
+    "e": "Salah. Metode survei tidak selalu melibatkan interaksi langsung. Survei dapat dilakukan melalui kuesioner online tanpa interaksi tatap muka, survei dokumen, atau survei administratif yang tidak memerlukan interaksi langsung dengan responden.",
     "topic": "Metode Survei - Pendahuluan",
     "source": "STA2111-Kuliah-05.pdf",
     "id": 666
@@ -10166,7 +10166,7 @@
       "Penarikan Contoh Bertujuan (Purposive Sampling)"
     ],
     "a": 2,
-    "e": "Metode ini termasuk berpeluang karena setiap anggota populasi memiliki kesempuran diketahui dan tidak sama untuk terpilih sebagai sampel.",
+    "e": "Memilih responden secara acak dari daftar NIM merupakan Simple Random Sampling (SRS), yang termasuk dalam Penarikan Contoh Berpeluang (Probability Sampling) karena setiap anggota populasi memiliki peluang yang sama untuk terpilih.",
     "topic": "Metode Survei - Metode Penarikan Contoh",
     "source": "STA2111-Kuliah-05.pdf",
     "id": 759
