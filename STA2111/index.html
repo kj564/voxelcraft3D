@@ -581,7 +581,9 @@ figure.illustration figcaption strong {
 @media (max-width: 720px) {
     .topbar { padding: 0 12px; height: 54px; gap: 8px; }
     .search-wrap { margin: 0 12px; max-width: none; }
-    .actions { gap: 5px; }\n    .actions .btn { padding: 6px 8px; font-size: 11px; }\n    .home-link { display: none !important; }
+    .actions { gap: 5px; }
+    .actions .btn { padding: 6px 8px; font-size: 11px; }
+    .home-link { display: none !important; }
     .brand { font-size: 14px; }
     .brand .logo { width: 26px; height: 26px; font-size: 14px; }
     .brand span.sub { display: none; }
@@ -736,7 +738,7 @@ figure.illustration figcaption strong {
     <h3 class="sub" id="sub-1-4">1.4  Statistika Deskriptif vs Inferensial</h3>
     <ul>
         <li><strong>Statistika deskriptif</strong> — merangkum &amp; menyajikan data yang sudah dikumpulkan (tabel, grafik, mean, median, dst). Tidak menarik kesimpulan tentang populasi yang lebih besar.</li>
-        <li><strong>Statistika inferensial</strong> — menarik kesimpulan tentang populasi berdasarkan sampel (estimasi parameter, uji hipotesis, regresi). Wajib ada unsur peluang.</li>
+        <li><strong>Statistika inferensial</strong> — menarik kesimpulan tentang populasi berdasarkan sampel (misalnya estimasi parameter dan uji hipotesis), dengan ketidakpastian yang dinilai menggunakan model/asumsi statistik yang sesuai.</li>
     </ul>
 
     <h3 class="sub" id="sub-1-5">1.5  Variabel &amp; Skala Pengukuran Stevens</h3>
@@ -1360,15 +1362,15 @@ figure.illustration figcaption strong {
     </ul>
     <h4 class="subsub">Langkah 3 — Mean, Varians, Simpangan Baku, CV</h4>
     <ul>
-        <li><strong>Σx</strong> = 1.495 → <strong>Mean (x̄)</strong> = 1.495/20 = 74,75</li>
-        <li><strong>Σ(x−x̄)²</strong> = 3.904,75 → <strong>s²</strong> = 3.904,75/19 = 205,51</li>
-        <li><strong>s</strong> = √205,51 ≈ 14,34</li>
-        <li><strong>CV</strong> = (14,34/74,75) × 100% ≈ 19,18% (penyebaran sedang)</li>
+        <li><strong>Σx</strong> = 1.497 → <strong>Mean (x̄)</strong> = 1.497/20 = 74,85</li>
+        <li><strong>Σ(x−x̄)²</strong> = 3.782,55 → <strong>Varians sampel (s²)</strong> = 3.782,55/19 ≈ 199,08</li>
+        <li><strong>Simpangan baku sampel (s)</strong> = √199,08 ≈ 14,11</li>
+        <li><strong>CV</strong> = (14,11/74,85) × 100% ≈ 18,85%. Interpretasi CV bergantung pada konteks; kategori “rendah/sedang/tinggi” tidak universal.</li>
     </ul>
     <h4 class="subsub">Langkah 4 — Skewness</h4>
     <ul>
-        <li>Mean = 74,75 &lt; Median = 75,5 → Mean &lt; Median</li>
-        <li><strong>Pearson Sk</strong> = 3·(74,75 − 75,5)/14,34 ≈ −0,157</li>
+        <li>Mean = 74,85 &lt; Median = 75,5 → Mean &lt; Median</li>
+        <li><strong>Pearson Sk</strong> = 3·(74,85 − 75,5)/14,11 ≈ −0,138</li>
         <li>Sk &lt; 0 → <strong>skewness negatif lemah</strong> (mendekati simetris)</li>
     </ul>
     <h4 class="subsub">Langkah 5 — Visual Boxplot</h4>
@@ -1379,16 +1381,16 @@ figure.illustration figcaption strong {
         <tr><th>Kelas</th><th>Batas</th><th>Tepi</th><th>Titik Tengah</th><th>f</th><th>f<sub>rel</sub></th><th>f<sub>kum</sub></th></tr>
         <tr><td>1</td><td>45–54</td><td>44,5–54,5</td><td>49,5</td><td>2</td><td>10%</td><td>2</td></tr>
         <tr><td>2</td><td>55–64</td><td>54,5–64,5</td><td>59,5</td><td>2</td><td>10%</td><td>4</td></tr>
-        <tr><td>3</td><td>65–74</td><td>64,5–74,5</td><td>69,5</td><td>4</td><td>20%</td><td>8</td></tr>
-        <tr><td>4</td><td>75–84</td><td>74,5–84,5</td><td>79,5</td><td>6</td><td>30%</td><td>14</td></tr>
-        <tr><td>5</td><td>85–94</td><td>84,5–94,5</td><td>89,5</td><td>4</td><td>20%</td><td>18</td></tr>
+        <tr><td>3</td><td>65–74</td><td>64,5–74,5</td><td>69,5</td><td>5</td><td>25%</td><td>9</td></tr>
+        <tr><td>4</td><td>75–84</td><td>74,5–84,5</td><td>79,5</td><td>6</td><td>30%</td><td>15</td></tr>
+        <tr><td>5</td><td>85–94</td><td>84,5–94,5</td><td>89,5</td><td>3</td><td>15%</td><td>18</td></tr>
         <tr><td>6</td><td>95–104</td><td>94,5–104,5</td><td>99,5</td><td>2</td><td>10%</td><td>20</td></tr>
     </table>
-    <p>Mean berkelompok: x̄ = Σ(f<sub>i</sub>·x<sub>i</sub>)/n = (2·49,5 + 2·59,5 + 4·69,5 + 6·79,5 + 4·89,5 + 2·99,5)/20 = 1.530/20 = 76,5 (sedikit beda dari mean data mentah karena pendekatan titik tengah).</p>
+    <p>Mean berkelompok: x̄ = Σ(f<sub>i</sub>·x<sub>i</sub>)/n = (2·49,5 + 2·59,5 + 5·69,5 + 6·79,5 + 3·89,5 + 2·99,5)/20 = 1.510/20 = 75,5 (sedikit berbeda dari mean data mentah 74,85 karena data dikelompokkan dan titik tengah kelas digunakan sebagai pendekatan).</p>
     <h4 class="subsub">Langkah 7 — Simpulan Akhir</h4>
     <div class="card-tip">
         <strong class="label">INTERPRETASI</strong>
-        Distribusi nilai UTS STA2111 cenderung <strong>simetris dengan sedikit miring ke kiri</strong> (Sk ≈ −0,16). Tidak ada pencilan. Penyebaran relatif (CV ≈ 19%) tergolong sedang — kelompok relatif homogen. Median 75,5 &gt; Mean 74,75 → sebagian besar mahasiswa nilai di atas rata-rata.
+        Distribusi nilai UTS STA2111 cenderung <strong>mendekati simetris dengan sedikit kemencengan ke kiri</strong> (koefisien Pearson ≈ −0,14). Tidak ditemukan pencilan menurut aturan 1,5 × IQR dengan konvensi kuartil yang digunakan. CV sampel ≈ 18,85%; tingkat keragaman perlu ditafsirkan sesuai konteks. Median yang sedikit lebih besar daripada mean konsisten dengan kemencengan ke kiri, tetapi tidak membuktikan bahwa sebagian besar mahasiswa mendapat nilai di atas rata-rata.
     </div>
 </section>
 
@@ -1546,31 +1548,49 @@ function updateActiveNav() {
 window.addEventListener('scroll', updateActiveNav, { passive: true });
 updateActiveNav();
 
-// ============ SEARCH ============
+// ============ SEARCH: HIGHLIGHT MATCHES ============
 const searchBox = document.getElementById('searchBox');
-const allSections = document.querySelectorAll('section.bab, h3.sub, p, li, td, .card-formula, .card-tip, .card-warning, .card-info, .exam-q');
-
+const searchRoot = document.querySelector('.main');
+let searchDebounce;
+function clearSearchHighlights() {
+    searchRoot.querySelectorAll('mark.search-highlight').forEach(mark => mark.replaceWith(document.createTextNode(mark.textContent)));
+    searchRoot.normalize();
+}
 searchBox.addEventListener('input', function() {
-    const query = this.value.trim().toLowerCase();
-    // Clear previous highlights
-    document.querySelectorAll('.search-highlight').forEach(el => {
-        const parent = el.parentNode;
-        parent.replaceChild(document.createTextNode(el.textContent), el);
-        parent.normalize();
-    });
-    if (!query || query.length < 3) return;
-
-    // Find matching sections
-    let firstMatch = null;
-    document.querySelectorAll('section.bab').forEach(sec => {
-        const text = sec.textContent.toLowerCase();
-        if (text.includes(query)) {
-            if (!firstMatch) firstMatch = sec;
-        }
-    });
-    if (firstMatch) {
-        firstMatch.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    window.clearTimeout(searchDebounce);
+    searchDebounce = window.setTimeout(() => {
+        clearSearchHighlights();
+        const query = searchBox.value.trim();
+        if (query.length < 2) return;
+        const walker = document.createTreeWalker(searchRoot, NodeFilter.SHOW_TEXT, {
+            acceptNode(node) {
+                if (!node.nodeValue || !node.nodeValue.toLowerCase().includes(query.toLowerCase())) return NodeFilter.FILTER_REJECT;
+                const parent = node.parentElement;
+                if (!parent || parent.closest('script, style, mark, button, input')) return NodeFilter.FILTER_REJECT;
+                return NodeFilter.FILTER_ACCEPT;
+            }
+        });
+        const nodes = [];
+        while (walker.nextNode()) nodes.push(walker.currentNode);
+        let firstMatch = null;
+        nodes.forEach(node => {
+            const original = node.nodeValue, lower = original.toLowerCase(), needle = query.toLowerCase();
+            const fragment = document.createDocumentFragment();
+            let from = 0, at;
+            while ((at = lower.indexOf(needle, from)) !== -1) {
+                if (at > from) fragment.append(document.createTextNode(original.slice(from, at)));
+                const mark = document.createElement('mark');
+                mark.className = 'search-highlight';
+                mark.textContent = original.slice(at, at + query.length);
+                fragment.append(mark);
+                if (!firstMatch) firstMatch = mark;
+                from = at + query.length;
+            }
+            if (from < original.length) fragment.append(document.createTextNode(original.slice(from)));
+            node.replaceWith(fragment);
+        });
+        if (firstMatch) firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 120);
 });
 
 // ============ KEYBOARD SHORTCUT: "/" to focus search ============
