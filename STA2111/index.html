@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f2e2a">
+<meta name="description" content="Rangkuman komprehensif STA2111 UTS - Statistika dan Analisis Data IPB University. 6 bab lengkap dengan ilustrasi, rumus, dan latihan soal Bagian C.">
+<title>STA2111 UTS · Statistika dan Analisis Data — Rangkuman Lengkap</title>
+<style>
+:root {
+    --c-bg: #fafaf7;
+    --c-paper: #ffffff;
+    --c-ink: #0f2e2a;
+    --c-muted: #5b6f6b;
+    --c-line: #e1e7e3;
+    --c-accent: #0d7c66;
+    --c-accent-soft: #d4efe6;
+    --c-accent-dark: #0a5d4d;
+    --c-warning: #b8451e;
+    --c-warning-soft: #fce4d6;
+    --c-info: #1e4a8a;
+    --c-info-soft: #d8e3f5;
+    --c-gold: #b88a1e;
+    --c-gold-soft: #fdf1d4;
+    --c-purple: #6b3aa0;
+    --c-purple-soft: #ede1f7;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+    background: var(--c-bg);
+    color: var(--c-ink);
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ============ TOP BAR ============ */
+.topbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: linear-gradient(135deg, #0f2e2a 0%, #1a4a3e 100%);
+    color: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    height: 56px;
+}
+.brand {
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.brand .logo {
+    width: 32px; height: 32px;
+    background: var(--c-accent);
+    color: #fff;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    font-weight: 900;
+}
+.brand span.sub { color: #b6d4cc; font-weight: 500; }
+.search-wrap {
+    flex: 1;
+    max-width: 480px;
+    margin: 0 24px;
+    position: relative;
+}
+.search-wrap input {
+    width: 100%;
+    padding: 8px 14px 8px 36px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 8px;
+    color: #fff;
+    font: inherit;
+    font-size: 13px;
+    transition: background 0.15s, border-color 0.15s;
+}
+.search-wrap input::placeholder { color: #b6d4cc; }
+.search-wrap input:focus {
+    background: rgba(255,255,255,0.18);
+    border-color: rgba(255,255,255,0.4);
+    outline: none;
+}
+.search-wrap .icon {
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b6d4cc;
+    font-size: 14px;
+}
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+.btn {
+    background: var(--c-accent);
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.15s;
+}
+.btn:hover { background: var(--c-accent-dark); transform: translateY(-1px); }
+.btn.secondary { background: rgba(255,255,255,0.15); }
+.btn.secondary:hover { background: rgba(255,255,255,0.25); }
+
+/* ============ LAYOUT ============ */
+.layout {
+    display: grid;
+    grid-template-columns: 260px 1fr 280px;
+    margin-top: 56px;
+    min-height: calc(100vh - 56px);
+}
+
+/* ============ LEFT SIDEBAR ============ */
+.sidebar {
+    position: sticky;
+    top: 56px;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    background: var(--c-paper);
+    border-right: 1px solid var(--c-line);
+    padding: 20px 12px 40px 20px;
+}
+.sidebar h4 {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--c-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 18px 0 8px 6px;
+}
+.sidebar h4:first-child { margin-top: 0; }
+.nav-item {
+    display: block;
+    padding: 7px 12px;
+    color: var(--c-ink);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: background 0.12s, color 0.12s;
+    border-left: 3px solid transparent;
+    margin-left: -3px;
+}
+.nav-item:hover {
+    background: var(--c-accent-soft);
+    color: var(--c-accent-dark);
+}
+.nav-item.active {
+    background: var(--c-accent-soft);
+    color: var(--c-accent-dark);
+    border-left-color: var(--c-accent);
+    font-weight: 700;
+}
+.nav-item.sub { padding-left: 24px; font-size: 12.5px; color: var(--c-muted); }
+.nav-item.sub.active { color: var(--c-accent-dark); }
+
+/* ============ MAIN CONTENT ============ */
+.main {
+    padding: 32px 40px 80px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #0f2e2a 0%, #1a4a3e 50%, #0d7c66 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 40px 36px;
+    margin-bottom: 36px;
+    position: relative;
+    overflow: hidden;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 280px; height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(184,138,30,0.18), transparent 70%);
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: -60px;
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(13,124,102,0.3), transparent 70%);
+}
+.hero-eyebrow {
+    color: #f0c879;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 2;
+}
+.hero h1 {
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 1.05;
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 2;
+}
+.hero h1 .light { color: #c8e3d8; font-weight: 200; }
+.hero h1 .gold { color: #f0c879; font-style: italic; }
+.hero p {
+    color: #c8e3d8;
+    font-size: 15.5px;
+    max-width: 580px;
+    position: relative;
+    z-index: 2;
+    line-height: 1.5;
+}
+.hero-stats {
+    display: flex;
+    gap: 28px;
+    margin-top: 28px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+.hero-stat .num { font-size: 26px; font-weight: 800; color: #f0c879; }
+.hero-stat .lbl { font-size: 11px; color: #b6d4cc; text-transform: uppercase; letter-spacing: 0.08em; }
+
+/* SECTIONS */
+section.bab {
+    margin-bottom: 56px;
+    scroll-margin-top: 72px;
+}
+.bab-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--c-accent);
+    scroll-margin-top: 72px;
+}
+.bab-num {
+    background: var(--c-accent);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+.bab-title {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--c-ink);
+    letter-spacing: -0.03em;
+    margin: 0;
+    flex: 1;
+}
+.bab-tag {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    background: var(--c-gold-soft);
+    color: var(--c-gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+h3.sub {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--c-accent-dark);
+    margin: 28px 0 10px;
+    letter-spacing: -0.02em;
+    scroll-margin-top: 72px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--c-line);
+}
+h4.subsub {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--c-ink);
+    margin: 18px 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+p { margin: 8px 0; }
+ul, ol { margin: 8px 0 12px 24px; }
+li { margin-bottom: 4px; }
+strong { color: var(--c-ink); font-weight: 700; }
+em { color: var(--c-muted); font-style: italic; }
+
+/* CARDS */
+.card-formula {
+    background: var(--c-accent-soft);
+    border-left: 4px solid var(--c-accent);
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin: 14px 0;
+    break-inside: avoid;
+}
+.card-formula .label {
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--c-accent-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 6px;
+}
+.card-formula .formula {
+    font-family: 'Cambria Math', 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--c-ink);
+    text-align: center;
+    padding: 10px 0;
+    background: rgba(255,255,255,0.5);
+    border-radius: 6px;
+    margin: 4px 0;
+}
+.card-formula .desc {
+    font-size: 13px;
+    color: var(--c-muted);
+    margin-top: 8px;
+    line-height: 1.5;
+}
+.card-tip {
+    background: var(--c-gold-soft);
+    border-left: 4px solid var(--c-gold);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 14px 0;
+    font-size: 14px;
+}
+.card-tip strong.label { color: var(--c-gold); text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; display: block; margin-bottom: 4px; }
+.card-warning {
+    background: var(--c-warning-soft);
+    border-left: 4px solid var(--c-warning);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 14px 0;
+    font-size: 14px;
+}
+.card-warning strong.label { color: var(--c-warning); text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; display: block; margin-bottom: 4px; }
+.card-info {
+    background: var(--c-info-soft);
+    border-left: 4px solid var(--c-info);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 14px 0;
+    font-size: 14px;
+}
+.card-info strong.label { color: var(--c-info); text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; display: block; margin-bottom: 4px; }
+.card-purple {
+    background: var(--c-purple-soft);
+    border-left: 4px solid var(--c-purple);
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 14px 0;
+    font-size: 14px;
+}
+.card-purple strong.label { color: var(--c-purple); text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; display: block; margin-bottom: 4px; }
+
+/* TABLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14px 0;
+    font-size: 13.5px;
+    break-inside: avoid;
+    background: var(--c-paper);
+}
+th {
+    background: var(--c-accent);
+    color: #fff;
+    padding: 9px 10px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid var(--c-accent);
+}
+td {
+    padding: 8px 10px;
+    border: 1px solid var(--c-line);
+    vertical-align: top;
+    line-height: 1.5;
+}
+tr:nth-child(even) td { background: var(--c-bg); }
+tr.highlight td { background: var(--c-accent-soft); font-weight: 600; }
+
+/* FIGURES */
+figure.illustration {
+    margin: 18px 0;
+    padding: 16px;
+    background: var(--c-paper);
+    border: 1px solid var(--c-line);
+    border-radius: 12px;
+    text-align: center;
+    break-inside: avoid;
+}
+figure.illustration img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+figure.illustration figcaption {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--c-muted);
+    font-style: italic;
+    line-height: 1.5;
+}
+figure.illustration figcaption strong {
+    color: var(--c-accent-dark);
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* EXAM QUESTIONS */
+.exam-q {
+    background: var(--c-paper);
+    border: 1.5px solid var(--c-line);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 16px 0;
+    break-inside: avoid;
+    transition: border-color 0.15s, box-shadow 0.15s;
+}
+.exam-q:hover { border-color: var(--c-accent); box-shadow: 0 4px 12px rgba(13,124,102,0.08); }
+.exam-q .q-num {
+    display: inline-block;
+    background: var(--c-accent);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 14px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.exam-q .q-text { font-size: 15px; font-weight: 600; color: var(--c-ink); margin-bottom: 10px; line-height: 1.5; }
+.exam-q .q-options { font-size: 14px; color: var(--c-muted); margin-bottom: 12px; padding-left: 12px; line-height: 1.7; }
+.exam-q .q-answer {
+    background: var(--c-accent-soft);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 13.5px;
+    margin-top: 8px;
+    border-left: 3px solid var(--c-accent);
+}
+.exam-q .q-answer strong { color: var(--c-accent-dark); text-transform: uppercase; font-size: 11px; letter-spacing: 0.08em; display: block; margin-bottom: 4px; }
+
+/* ============ RIGHT SIDEBAR (Formula Quick Ref) ============ */
+.formula-side {
+    position: sticky;
+    top: 56px;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    background: var(--c-paper);
+    border-left: 1px solid var(--c-line);
+    padding: 20px 18px 40px;
+}
+.formula-side h4 {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--c-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 18px 0 10px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--c-line);
+}
+.formula-side h4:first-child { margin-top: 0; }
+.formula-side .formula-item {
+    padding: 8px 10px;
+    background: var(--c-bg);
+    border-radius: 6px;
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+.formula-side .formula-item .name {
+    color: var(--c-accent-dark);
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 3px;
+}
+.formula-side .formula-item .eq {
+    font-family: 'Cambria Math', serif;
+    font-size: 14px;
+    color: var(--c-ink);
+    text-align: center;
+    padding: 4px 0;
+}
+
+/* ============ FOOTER ============ */
+.footer {
+    background: linear-gradient(135deg, #0f2e2a 0%, #1a4a3e 100%);
+    color: #c8e3d8;
+    padding: 40px 36px;
+    margin: 40px -40px -80px;
+    text-align: center;
+    border-radius: 16px 16px 0 0;
+}
+.footer h3 { color: #f0c879; font-size: 16px; font-weight: 800; margin-bottom: 12px; }
+.footer p { font-size: 13px; margin: 6px 0; }
+.footer .checklist {
+    background: rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 18px 24px;
+    max-width: 560px;
+    margin: 20px auto 0;
+    border: 1px solid rgba(240,200,121,0.25);
+    text-align: left;
+}
+.footer .checklist h4 { color: #f0c879; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+.footer .checklist ul { list-style: none; padding: 0; margin: 0; }
+.footer .checklist li { padding: 4px 0 4px 24px; position: relative; color: #c8e3d8; font-size: 12.5px; }
+.footer .checklist li::before { content: '✓'; position: absolute; left: 0; color: #f0c879; font-weight: 700; }
+
+/* ============ SCROLLBAR ============ */
+.sidebar::-webkit-scrollbar, .formula-side::-webkit-scrollbar { width: 6px; }
+.sidebar::-webkit-scrollbar-thumb, .formula-side::-webkit-scrollbar-thumb { background: var(--c-line); border-radius: 3px; }
+
+/* ============ SEARCH HIGHLIGHT ============ */
+.search-highlight { background: var(--c-gold-soft); padding: 0 2px; border-radius: 2px; }
+.search-hidden { display: none !important; }
+
+/* ============ PRINT ============ */
+@media print {
+    .topbar, .sidebar, .formula-side, .actions { display: none !important; }
+    .layout { display: block; margin: 0; }
+    .main { padding: 0; max-width: 100%; }
+    body { font-size: 11pt; line-height: 1.4; }
+    section.bab { page-break-inside: avoid; margin-bottom: 20px; }
+    figure.illustration, .card-formula, .card-tip, .card-warning, .card-info, .exam-q, table { page-break-inside: avoid; }
+    .hero { background: #0f2e2a !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .footer { page-break-before: always; }
+    a { color: inherit; text-decoration: none; }
+}
+
+/* ============ MOBILE ============ */
+@media (max-width: 1100px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar, .formula-side { position: relative; top: 0; height: auto; border: none; padding: 16px 20px; }
+    .sidebar { border-bottom: 1px solid var(--c-line); }
+    .formula-side { border-top: 1px solid var(--c-line); display: none; }
+    .main { padding: 24px 20px 60px; }
+}
+@media (max-width: 720px) {
+    .topbar { padding: 0 16px; height: 50px; }
+    .search-wrap { margin: 0 12px; max-width: none; }
+    .actions .btn { padding: 6px 10px; font-size: 12px; }
+    .brand { font-size: 14px; }
+    .brand .logo { width: 26px; height: 26px; font-size: 14px; }
+    .brand span.sub { display: none; }
+    .main { padding: 16px 14px 40px; }
+    .hero { padding: 24px 20px; }
+    .hero h1 { font-size: 28px; }
+    .bab-title { font-size: 20px; }
+    .bab-tag { display: none; }
+    h3.sub { font-size: 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+    <a class="brand" href="#top">
+        <span class="logo">σ</span>
+        <span>STA2111 <span class="sub">· UTS Rangkuman</span></span>
+    </a>
+    <div class="search-wrap">
+        <span class="icon">🔍</span>
+        <input id="searchBox" type="search" placeholder="Cari konsep, rumus, atau istilah (mis. varians, RAL, kuartil)..." autocomplete="off">
+    </div>
+    <div class="actions">
+        <button class="btn secondary" onclick="window.scrollTo({top: document.body.scrollHeight, behavior:'smooth'})">↓ Latihan</button>
+        <button class="btn" onclick="window.print()">🖨 Cetak PDF</button>
+    </div>
+</header>
+
+<!-- ============ LAYOUT ============ -->
+<div class="layout" id="top">
+
+<!-- ============ LEFT SIDEBAR (TOC) ============ -->
+<aside class="sidebar" id="sidebar">
+    <h4>NAVIGASI BAB</h4>
+    <a class="nav-item" href="#bab-1">BAB 1 · Konsep Dasar Statistika</a>
+    <a class="nav-item sub" href="#sub-1-1">1.1 Statistika vs Statistik vs Parameter</a>
+    <a class="nav-item sub" href="#sub-1-2">1.2 Populasi vs Sampel</a>
+    <a class="nav-item sub" href="#sub-1-3">1.3 Jenis Data &amp; Skala</a>
+    <a class="nav-item sub" href="#sub-1-4">1.4 Deskriptif vs Inferensial</a>
+    <a class="nav-item sub" href="#sub-1-5">1.5 Variabel &amp; Skala Stevens</a>
+
+    <a class="nav-item" href="#bab-2">BAB 2 · Penyajian Data</a>
+    <a class="nav-item sub" href="#sub-2-1">2.1 Tabel Distribusi Frekuensi</a>
+    <a class="nav-item sub" href="#sub-2-2">2.2 Diagram Kategorik</a>
+    <a class="nav-item sub" href="#sub-2-3">2.3 Diagram Numerik</a>
+    <a class="nav-item sub" href="#sub-2-4">2.4 Cross Tabulation</a>
+    <a class="nav-item sub" href="#sub-2-5">2.5 Stem-and-Leaf</a>
+
+    <a class="nav-item" href="#bab-3">BAB 3 · Peringkasan Data</a>
+    <a class="nav-item sub" href="#sub-3-1">3.1 Ukuran Pemusatan</a>
+    <a class="nav-item sub" href="#sub-3-2">3.2 Ukuran Penyebaran</a>
+    <a class="nav-item sub" href="#sub-3-3">3.3 Skewness</a>
+
+    <a class="nav-item" href="#bab-4">BAB 4 · Eksplorasi Data</a>
+    <a class="nav-item sub" href="#sub-4-1">4.1 5-Number Summary</a>
+    <a class="nav-item sub" href="#sub-4-2">4.2 Boxplot</a>
+    <a class="nav-item sub" href="#sub-4-3">4.3 Pencilan Univariat vs Multivariat</a>
+    <a class="nav-item sub" href="#sub-4-4">4.4 Pola Sebaran (Unimodal/Bimodal)</a>
+    <a class="nav-item sub" href="#sub-4-5">4.5 Perbandingan Antar Grup</a>
+
+    <a class="nav-item" href="#bab-5">BAB 5 · Metode Survei</a>
+    <a class="nav-item sub" href="#sub-5-1">5.1 Definisi &amp; Tahapan Survei</a>
+    <a class="nav-item sub" href="#sub-5-2">5.2 10 Metode Sampling</a>
+    <a class="nav-item sub" href="#sub-5-3">5.3 Sampling vs Non-Sampling Error</a>
+    <a class="nav-item sub" href="#sub-5-4">5.4 Kuesioner (4 Syarat + 5 Bagian)</a>
+
+    <a class="nav-item" href="#bab-6">BAB 6 · Perancangan Percobaan</a>
+    <a class="nav-item sub" href="#sub-6-1">6.1 Percobaan vs Survei</a>
+    <a class="nav-item sub" href="#sub-6-2">6.2 Terminologi &amp; 3 Prinsip</a>
+    <a class="nav-item sub" href="#sub-6-3">6.3 RAL vs RAKL vs RBSL</a>
+    <a class="nav-item sub" href="#sub-6-4">6.4 Faktorial &amp; Split Plot</a>
+    <a class="nav-item sub" href="#sub-6-5">6.5 Bagan Percobaan</a>
+
+    <a class="nav-item" href="#bab-7">BAB 7 · Latihan Bagian C</a>
+    <a class="nav-item sub" href="#sub-7-1">10 Soal Menjodohkan + Alasan</a>
+    <a class="nav-item sub" href="#sub-7-2">1 Soal Hitungan End-to-End</a>
+</aside>
+
+<!-- ============ MAIN CONTENT ============ -->
+<main class="main">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-eyebrow">Rangkuman UTS · IPB University · PKU</div>
+    <h1><span class="light">STA</span>2111 <span class="gold">Statistika</span> &amp; Analisis Data</h1>
+    <p>Penjelasan lengkap untuk Ujian Tengah Semester — 6 bab inti dari Konsep Dasar Statistika sampai Rancangan Percobaan, plus 10 soal Bagian C (Menjodohkan + alasan) dan 1 soal hitungan end-to-end. Semua materi dirangkum dari 6 PDF kuliah STA2111 + smartstat.info.</p>
+    <div class="hero-stats">
+        <div class="hero-stat"><div class="num">6</div><div class="lbl">Bab Inti</div></div>
+        <div class="hero-stat"><div class="num">17</div><div class="lbl">Ilustrasi</div></div>
+        <div class="hero-stat"><div class="num">25+</div><div class="lbl">Rumus</div></div>
+        <div class="hero-stat"><div class="num">15</div><div class="lbl">Tabel</div></div>
+        <div class="hero-stat"><div class="num">11</div><div class="lbl">Latihan</div></div>
+    </div>
+</section>
+
+<!-- ================================================== BAB 1 ================================================== -->
+<section class="bab" id="bab-1">
+    <div class="bab-header">
+        <span class="bab-num">BAB 01</span>
+        <h2 class="bab-title">Konsep Dasar Statistika</h2>
+        <span class="bab-tag">Pasti Keluar B/S</span>
+    </div>
+
+    <p>Statistika adalah cabang ilmu matematika terapan yang berfokus pada cara mengumpulkan, mengukur, mengklasifikasi, menghitung, menjelaskan, menganalisis, dan menafsirkan data secara sistematis. Tujuan utamanya: mengubah data mentah menjadi informasi yang bisa dipakai untuk pengambilan keputusan. Statistika bukan sekadar "ngitung angka" — ia meliputi seluruh siklus: produksi data → peringkasan → eksplorasi → analisis → interpretasi.</p>
+
+    <p>Data ada di mana-mana — setiap aktivitas manusia, institusi, dan negara memproduksi data. Tanpa kemampuan mengolahnya, data hanya jadi tumpukan angka. Alat yang dipakai untuk mengubah data menjadi informasi adalah <strong>statistika</strong>.</p>
+
+    <h3 class="sub" id="sub-1-1">1.1  Statistika vs Statistik vs Parameter</h3>
+    <p>Tiga istilah yang sering tertukar. Bedakan dari tanda akhir huruf dan sumber datanya:</p>
+    <table>
+        <tr><th style="width:25%">Istilah</th><th>Definisi</th><th style="width:30%">Contoh</th></tr>
+        <tr><td><strong>Statistik<span style="color:var(--c-warning)">a</span></strong></td><td>Ilmu/cabang disiplin — kumpulan teori &amp; metode mengolah data</td><td>"Statistika deskriptif dipakai untuk merangkum data sensus."</td></tr>
+        <tr><td><strong>Statistik</strong></td><td>Nilai/bilangan yang dihitung dari <em>sampel</em></td><td>Rata-rata sampel <span style="font-family:Cambria Math">x̄</span>, simpangan baku sampel <span style="font-family:Cambria Math">s</span></td></tr>
+        <tr><td><strong>Parameter</strong></td><td>Nilai/bilangan yang menggambarkan <em>populasi</em></td><td>Rata-rata populasi <span style="font-family:Cambria Math">μ</span>, varians populasi <span style="font-family:Cambria Math">σ²</span></td></tr>
+    </table>
+    <div class="card-tip">
+        <strong class="label">TIPS HAFALAN</strong>
+        <strong>Parameter = P</strong>opulasi · <strong>Statistik = S</strong>ampel (huruf depan cocok). Statistik<span style="color:var(--c-warning)">a</span> (ada "-a") = ilmu. Tanpa "-a" = nilai dari sampel.
+    </div>
+
+    <h3 class="sub" id="sub-1-2">1.2  Populasi vs Sampel</h3>
+    <p><strong>Populasi</strong> adalah keseluruhan objek/subjek yang menjadi pusat perhatian penelitian (bisa manusia, hewan, tumbuhan, gejala, nilai, peristiwa). <strong>Sampel</strong> adalah bagian dari populasi yang dipilih dengan aturan tertentu sehingga dapat mewakili karakteristik populasi.</p>
+    <ul>
+        <li><strong>Populasi</strong> = himpunan seluruh objek yang ingin dipelajari. Contoh: "Seluruh mahasiswa IPB angkatan 2024."</li>
+        <li><strong>Sampel</strong> = subset terpilih dari populasi. Contoh: "200 mahasiswa IPB angkatan 2024 yang dipilih acak."</li>
+        <li><strong>Sampling frame</strong> = daftar unit populasi yang bisa dijadikan basis penarikan sampel (mis. daftar NIM).</li>
+        <li><strong>Sampel representatif</strong> = sampel yang karakteristiknya mencerminkan populasi.</li>
+        <li>Sampel diambil karena: (1) populasi terlalu besar/sensus tidak mungkin; (2) biaya &amp; waktu terbatas; (3) pengukuran destruktif (mis. uji kualitas produk).</li>
+    </ul>
+    <div class="card-warning">
+        <strong class="label">Jebakan B/S</strong>
+        "Populasi terbatas pada yang terdaftar di sampling frame." — BENAR jika sampling frame lengkap. SALAH jika sampling frame tidak lengkap (kasus bias). Populasi target ≠ populasi terjangkau (sampling frame).
+    </div>
+
+    <h3 class="sub" id="sub-1-3">1.3  Jenis Data &amp; Skala Pengukuran</h3>
+    <p>Bagi data berdasarkan sifatnya: <strong>kualitatif</strong> (kategori/label) atau <strong>kuantitatif</strong> (angka terukur). Lalu tentukan skala pengukurannya:</p>
+    <table>
+        <tr><th>Kategori</th><th>Sub-jenis</th><th>Skala</th><th>Contoh</th></tr>
+        <tr><td rowspan="2"><strong>Kualitatif</strong><br>(berupa kategori/label)</td><td>Nominal</td><td>Hanya label, tidak ada urutan</td><td>Agama, jenis kelamin, warna mata, jurusan</td></tr>
+        <tr><td>Ordinal</td><td>Ada urutan/rangking, jarak antar nilai tidak setara</td><td>Tingkat kepuasan (kecewa → puas → sangat puas), peringkat kelas, tingkat pendidikan</td></tr>
+        <tr><td rowspan="2"><strong>Kuantitatif</strong><br>(berupa angka terukur)</td><td>Diskrit</td><td>Hasil <em>menghitung</em>, bilangan bulat</td><td>Jumlah anak, jumlah mahasiswa, banyaknya mobil</td></tr>
+        <tr><td>Kontinu</td><td>Hasil <em>mengukur</em>, bisa pecahan</td><td>Tinggi badan, berat, suhu, waktu, pendapatan</td></tr>
+    </table>
+    <div class="card-tip">
+        <strong class="label">DISKRIT vs KONTINU</strong>
+        Diskrit = "hitung" (count). Kontinu = "ukur" (measure). Bisa kamu hitung 1, 2, 3… = diskrit. Hasilnya bisa 1.5, 1.7, 1.85… = kontinu.
+    </div>
+
+    <h3 class="sub" id="sub-1-4">1.4  Statistika Deskriptif vs Inferensial</h3>
+    <ul>
+        <li><strong>Statistika deskriptif</strong> — merangkum &amp; menyajikan data yang sudah dikumpulkan (tabel, grafik, mean, median, dst). Tidak menarik kesimpulan tentang populasi yang lebih besar.</li>
+        <li><strong>Statistika inferensial</strong> — menarik kesimpulan tentang populasi berdasarkan sampel (estimasi parameter, uji hipotesis, regresi). Wajib ada unsur peluang.</li>
+    </ul>
+
+    <h3 class="sub" id="sub-1-5">1.5  Variabel &amp; Skala Pengukuran Stevens</h3>
+    <p><strong>Variabel</strong> = karakteristik/atribut objek yang nilainya berbeda-beda antar objek. <strong>Variate</strong> = nilai konkret dari variabel pada satu objek. <strong>Data</strong> = kumpulan nilai yang diperoleh dari pengukuran/penghitungan suatu variabel.</p>
+    <p>Empat skala pengukuran Stevens (dari paling sederhana ke paling kaya informasi):</p>
+    <table>
+        <tr><th>Skala</th><th>Sifat</th><th>Operasi yang Valid</th><th>Contoh</th></tr>
+        <tr><td><strong>Nominal</strong></td><td>Hanya label, tidak ada urutan</td><td>=, ≠ (sama/tidak)</td><td>Jenis kelamin, agama</td></tr>
+        <tr><td><strong>Ordinal</strong></td><td>Ada urutan, jarak tidak setara</td><td>=, ≠, &lt;, &gt; (lebih besar/kecil)</td><td>Tingkat pendidikan, peringkat</td></tr>
+        <tr><td><strong>Interval</strong></td><td>Urutan + jarak setara, TANPA nol mutlak</td><td>=, ≠, &lt;, &gt;, +, − (tambah/kurang)</td><td>Suhu Celsius (0°C ≠ "tidak ada panas"), tahun kalender</td></tr>
+        <tr><td><strong>Rasio</strong></td><td>Urutan + jarak + nol mutlak = tidak ada nilai</td><td>=, ≠, &lt;, &gt;, +, −, ×, ÷ (semua operasi)</td><td>Berat badan (0 kg = tidak ada berat; 40 kg = 2× 20 kg), pendapatan, umur</td></tr>
+    </table>
+    <div class="card-info">
+        <strong class="label">PRINSIP KUNCI</strong>
+        Semakin ke kanan skalanya (Nominal → Ordinal → Interval → Rasio), semakin kaya informasi &amp; semakin banyak analisis yang bisa dilakukan. Data rasio bisa dihitung mean, median, CV. Data nominal hanya bisa dihitung modus &amp; frekuensi.
+    </div>
+</section>
+
+<!-- ================================================== BAB 2 ================================================== -->
+<section class="bab" id="bab-2">
+    <div class="bab-header">
+        <span class="bab-num">BAB 02</span>
+        <h2 class="bab-title">Penyajian Data</h2>
+        <span class="bab-tag">Sering di Bagian C</span>
+    </div>
+
+    <p>Setelah data dikumpulkan, kita perlu menyajikannya agar pola dan informasi penting mudah dilihat. Penyajian ada dua bentuk: <strong>tabular</strong> (tabel) dan <strong>grafis</strong> (diagram). Pilihan bentuk bergantung pada jenis data — kategorik atau numerik. Prinsipnya: "Kenali dulu tipe datanya, baru tentukan skala pengukurannya. Dari situlah analisis yang tepat dimulai."</p>
+
+    <h3 class="sub" id="sub-2-1">2.1  Tabel Distribusi Frekuensi (TDF)</h3>
+    <p>TDF dipakai untuk merangkas data numerik kontinu ke dalam beberapa kelompok (kelas) sehingga pola sebarannya tampak. Komponen wajib dihafal:</p>
+    <table>
+        <tr><th style="width:22%">Komponen</th><th>Definisi</th><th style="width:35%">Rumus / Aturan</th></tr>
+        <tr><td><strong>Kelas (Class)</strong></td><td>Interval yang membagi rentang data</td><td>Banyaknya kelas <span style="font-family:Cambria Math">k = 1 + 3,322 log<sub>10</sub>(n)</span> (aturan Sturges)</td></tr>
+        <tr><td><strong>Panjang Kelas</strong></td><td>Lebar tiap kelas (boleh sama/beda)</td><td><span style="font-family:Cambria Math">i = (X<sub>max</sub> − X<sub>min</sub>) / k</span>, dibulatkan ke atas</td></tr>
+        <tr><td><strong>Batas Kelas (Class Limit)</strong></td><td>Batas bawah &amp; atas inklusif</td><td>Mis. 60–69, 70–79 (kedua ujung termasuk)</td></tr>
+        <tr><td><strong>Tepi Kelas (Class Boundary)</strong></td><td>Batas sesungguhnya untuk data kontinu</td><td>BB − 0,5; BA + 0,5. Mis. 59,5–69,5, 69,5–79,5</td></tr>
+        <tr><td><strong>Titik Tengah (Class Mark)</strong></td><td>Nilai tengah kelas, dipakai untuk hitungan</td><td><span style="font-family:Cambria Math">x<sub>i</sub> = (BB + BA) / 2</span></td></tr>
+        <tr><td><strong>Frekuensi (f<sub>i</sub>)</strong></td><td>Banyak data yang jatuh ke kelas ke-i</td><td>Diambil dari data mentah</td></tr>
+        <tr><td><strong>Frekuensi Relatif</strong></td><td>Proporsi frekuensi kelas terhadap total</td><td><span style="font-family:Cambria Math">f<sub>rel</sub> = f<sub>i</sub> / n × 100%</span></td></tr>
+        <tr><td><strong>Frekuensi Kumulatif</strong></td><td>Jumlah frekuensi sampai kelas ke-i</td><td>Untuk ogive (≤ / ≥)</td></tr>
+    </table>
+
+    <div class="card-formula">
+        <div class="label">Aturan Sturges — Banyaknya Kelas</div>
+        <div class="formula">k = 1 + 3,322 · log<sub>10</sub>(n)</div>
+        <div class="desc">k = jumlah kelas yang disarankan, n = jumlah data. Mis. n=100 → k ≈ 1 + 3,322(2) = 7,64 → bulatkan ke 8 kelas.</div>
+    </div>
+
+    <h4 class="subsub">Langkah-Langkah Membuat TDF (Manual, dari data mentah)</h4>
+    <ol>
+        <li><strong>Urutkan data</strong> dari kecil ke besar.</li>
+        <li><strong>Hitung Jangkauan (Range)</strong> = max − min. Mis. max=58, min=12 → R=46.</li>
+        <li><strong>Pilih jumlah kelas (k)</strong>, biasanya antara 5–15. Bisa pakai Sturges.</li>
+        <li><strong>Hitung Lebar Kelas (i)</strong> = R / k, dibulatkan ke atas. Mis. 46/5 = 9,2 → 10.</li>
+        <li><strong>Tentukan Batas Kelas</strong>: mis. 10≤x&lt;20, 20≤x&lt;30, dst. (atau 10–19, 20–29 untuk integer).</li>
+        <li><strong>Tempatkan data</strong> pada kelasnya masing-masing. Hitung frekuensi tiap kelas.</li>
+    </ol>
+    <div class="card-info">
+        <strong class="label">PERTANYAAN RANCANGAN TDF</strong>
+        (1) Berapa lebar kelas (berapa banyak kelas)? → Sturges + pertimbangan praktis. (2) Bagaimana garis akhir interval (endpoints of the intervals)? → Tepi kelas (BB−0,5, BA+0,5) supaya tidak ada ambiguitas kelas untuk data kontinu.
+    </div>
+
+    <h3 class="sub" id="sub-2-2">2.2  Diagram untuk Data Kategorik</h3>
+    <table>
+        <tr><th>Diagram</th><th>Waktu Pakai</th><th>Ciri Khas</th></tr>
+        <tr><td><strong>Bar Chart</strong> (Diagram Batang)</td><td>Kategorik nominal/ordinal, bandingkan frekuensi antar kategori</td><td>Tinggi batang = frekuensi. Kategori terpisah (ada gap).</td></tr>
+        <tr><td><strong>Pie Chart</strong> (Diagram Lingkaran)</td><td>Kategorik, total 100%, kategori ≤ 5–7</td><td>Sudut potongan = (f<sub>i</sub>/n) × 360°. Cocok untuk proporsi.</td></tr>
+        <tr><td><strong>Pareto Chart</strong></td><td>Ingin lihat "vital few vs trivial many"</td><td>Bar chart diurutkan dari frekuensi tertinggi + garis kumulatif (%)</td></tr>
+        <tr><td><strong>Line Chart</strong> (Diagram Garis)</td><td>Data deret waktu (time series), ingin lihat tren</td><td>Titik-titik dihubungkan garis. Sumbu-X = waktu.</td></tr>
+    </table>
+    <figure class="illustration">
+        <img src="sta2111_assets/pareto_chart.png" alt="Diagram Pareto dengan bar diurutkan + garis kumulatif">
+        <figcaption><strong>Gambar 2.1 — Diagram Pareto:</strong> Bar chart diurutkan dari frekuensi tertinggi ke terendah, dengan garis kumulatif menunjukkan persentase total. Garis 80% memisahkan "vital few" (sedikit tapi penting) dari "trivial many" (banyak tapi kurang penting).</figcaption>
+    </figure>
+
+    <h3 class="sub" id="sub-2-3">2.3  Diagram untuk Data Numerik</h3>
+    <table>
+        <tr><th>Diagram</th><th>Waktu Pakai</th><th>Ciri Khas</th></tr>
+        <tr><td><strong>Histogram</strong></td><td>Data numerik kontinu yang dikelompokkan ke TDF</td><td>Tinggi batang = frekuensi. Batang menempel (tanpa gap). Sumbu-X = tepi kelas.</td></tr>
+        <tr><td><strong>Poligon Frekuensi</strong></td><td>Lihat pola sebaran sebagai garis lengkung</td><td>Garis yang menghubungkan titik tengah tiap kelas. Untuk banding 2+ distribusi.</td></tr>
+        <tr><td><strong>Ogive</strong></td><td>Lihat frekuensi kumulatif (≤ / ≥)</td><td>Garis S-shaped. Sumbu-X = tepi kelas, sumbu-Y = frekuensi kumulatif.</td></tr>
+        <tr><td><strong>Boxplot</strong></td><td>5-statistik + deteksi pencilan</td><td>Dibahas detail di Bab 4.</td></tr>
+        <tr><td><strong>Stem-and-Leaf</strong></td><td>Data mentah kecil, ingin lihat sebaran + nilai asli</td><td>Bagi angka jadi stem (puluhan) + leaf (satuan). Detail di sub 2.5.</td></tr>
+        <tr><td><strong>Scatter Plot</strong></td><td>Hubungan 2 variabel numerik + deteksi pencilan multivariat</td><td>Sumbu-X = var 1, sumbu-Y = var 2. Detail di Bab 4.</td></tr>
+    </table>
+    <figure class="illustration">
+        <img src="sta2111_assets/histogram_vs_bar.png" alt="Histogram vs Bar Chart comparison">
+        <figcaption><strong>Gambar 2.2 — Histogram vs Bar Chart:</strong> Histogram (kiri) untuk data numerik kontinu — batang menempel, sumbu-X = tepi kelas (bilangan). Bar Chart (kanan) untuk data kategorik — batang terpisah dengan gap, sumbu-X = label kategori. Inilah perbedaan paling sering jadi jebakan di ujian.</figcaption>
+    </figure>
+
+    <h3 class="sub" id="sub-2-4">2.4  Cross Tabulation (Tabel Kontingensi)</h3>
+    <p>Tabel silang yang memuat jumlah amatan dua variabel kategorik sekaligus. Disebut tabel <strong>r × c</strong> jika ada r baris (kategori var 1) dan c kolom (kategori var 2). Contoh: baris = jenis kelamin (L/P), kolom = fakultas (5) → tabel 2 × 5.</p>
+
+    <h3 class="sub" id="sub-2-5">2.5  Stem-and-Leaf Diagram (Diagram Dahan-Daun)</h3>
+    <p>Untuk data mentah berjumlah kecil (≤ 50), stem-and-leaf menampilkan sebaran data sekaligus nilai aslinya. Cara buat:</p>
+    <ol>
+        <li>Pisahkan tiap nilai jadi <strong>stem</strong> (bagian depan, mis. puluhan) dan <strong>leaf</strong> (bagian belakang, mis. satuan).</li>
+        <li>Daftar stem secara vertikal, urut naik, dengan garis pemisah "|".</li>
+        <li>Tulis leaf tiap nilai di baris stem yang sesuai, urut naik, dipisah spasi.</li>
+    </ol>
+    <figure class="illustration">
+        <img src="sta2111_assets/stem_leaf.png" alt="Contoh diagram stem and leaf">
+        <figcaption><strong>Gambar 2.3 — Stem-and-Leaf:</strong> Stem (puluhan) di kolom kiri, leaf (satuan) di kolom kanan. Tiap angka asli tetap terbaca — kelebihan vs histogram yang hanya tampil sebagai batang.</figcaption>
+    </figure>
+</section>
+
+<!-- ================================================== BAB 3 ================================================== -->
+<section class="bab" id="bab-3">
+    <div class="bab-header">
+        <span class="bab-num">BAB 03</span>
+        <h2 class="bab-title">Peringkasan Data</h2>
+        <span class="bab-tag">Paling Sering Dites</span>
+    </div>
+
+    <p>Peringkasan data = ringkas ratusan/ribuan angka menjadi beberapa nilai kunci yang tetap menggambarkan pola sebaran. Tiga aspek yang wajib diringkas: <strong>pemusatan</strong> (di mana data berkumpul), <strong>penyebaran</strong> (berapa lebar data menyebar), dan <strong>bentuk distribusi</strong> (simetris, miring ke kiri/kanan).</p>
+
+    <h3 class="sub" id="sub-3-1">3.1  Ukuran Pemusatan (Central Tendency)</h3>
+    <table>
+        <tr><th style="width:18%">Ukuran</th><th>Rumus</th><th>Kapan Dipakai</th></tr>
+        <tr><td><strong>Mean (rata-rata)</strong></td><td><span style="font-family:Cambria Math">x̄ = Σx<sub>i</sub> / n</span></td><td>Data simetris, tidak ada pencilan ekstrim. Sensitif outlier.</td></tr>
+        <tr><td><strong>Median</strong></td><td>Nilai tengah setelah urut</td><td>Data miring/ada pencilan. Robust terhadap outlier.</td></tr>
+        <tr><td><strong>Modus</strong></td><td>Nilai paling sering muncul</td><td>Data kategorik atau diskrit berulang.</td></tr>
+        <tr><td><strong>Weighted Mean</strong></td><td><span style="font-family:Cambria Math">x̄<sub>w</sub> = Σ(w<sub>i</sub>·x<sub>i</sub>) / Σw<sub>i</sub></span></td><td>Data diberi bobot berbeda (mis. IPK dengan SKS).</td></tr>
+    </table>
+
+    <div class="card-formula">
+        <div class="label">Mean Sampel (Tunggal)</div>
+        <div class="formula">x̄ = (x<sub>1</sub> + x<sub>2</sub> + … + x<sub>n</sub>) / n = Σx<sub>i</sub> / n</div>
+        <div class="desc">n = banyaknya data. Untuk data berkelompok (TDF), pakai titik tengah: x̄ = Σ(f<sub>i</sub>·x<sub>i</sub>) / n.</div>
+    </div>
+
+    <div class="card-formula">
+        <div class="label">Mean Berkelompok (dari TDF)</div>
+        <div class="formula">x̄ = Σ(f<sub>i</sub> · x<sub>i</sub>) / n</div>
+        <div class="desc">f<sub>i</sub> = frekuensi kelas i, x<sub>i</sub> = titik tengah kelas i. Hasilnya pendekatan (bisa beda tipis dari mean data mentah).</div>
+    </div>
+
+    <h4 class="subsub">Cari Median — Langkah</h4>
+    <ol>
+        <li>Urutkan data dari kecil ke besar.</li>
+        <li>Jika n ganjil: median = data ke-(n+1)/2.</li>
+        <li>Jika n genap: median = rata-rata data ke-n/2 dan (n/2 + 1).</li>
+    </ol>
+
+    <h4 class="subsub">Kuartil (Q1, Q2, Q3)</h4>
+    <p>Kuartil membagi data terurut menjadi 4 bagian sama besar. <strong>Q2 = median</strong>. Q1 = median paruh bawah, Q3 = median paruh atas.</p>
+    <ul>
+        <li>Posisi Q1: <span style="font-family:Cambria Math">nQ1 = (n+1)/4</span></li>
+        <li>Posisi Q2: <span style="font-family:Cambria Math">nQ2 = (n+1)/2</span></li>
+        <li>Posisi Q3: <span style="font-family:Cambria Math">nQ3 = 3(n+1)/4</span></li>
+    </ul>
+    <div class="card-info">
+        <strong class="label">DUA METODE HITUNG KUARTIL</strong>
+        <strong>Metode Belah Dua:</strong> bagi data jadi dua (atas/bawah median), lalu median tiap bagian = Q1/Q3. <strong>Metode Interpolasi:</strong> jika posisi bukan integer, lakukan interpolasi linier. Mis. posisi 4,25 → ambil 75% data ke-4 + 25% data ke-5.
+    </div>
+
+    <h3 class="sub" id="sub-3-2">3.2  Ukuran Penyebaran (Dispersion)</h3>
+    <table>
+        <tr><th>Ukuran</th><th>Rumus</th><th>Arti</th></tr>
+        <tr><td><strong>Range (R)</strong></td><td><span style="font-family:Cambria Math">R = X<sub>max</sub> − X<sub>min</sub></span></td><td>Sensitif outlier, hanya pakai dua nilai ekstrem.</td></tr>
+        <tr><td><strong>Interquartile Range (IQR)</strong></td><td><span style="font-family:Cambria Math">IQR = Q3 − Q1</span></td><td>Lebar 50% data tengah. Robust terhadap outlier.</td></tr>
+        <tr><td><strong>Varians Sampel (s²)</strong></td><td><span style="font-family:Cambria Math">s² = Σ(x<sub>i</sub> − x̄)² / (n − 1)</span></td><td>Rata-rata kuadrat simpangan. Pembagi n−1 agar tidak bias.</td></tr>
+        <tr><td><strong>Varians Populasi (σ²)</strong></td><td><span style="font-family:Cambria Math">σ² = Σ(x<sub>i</sub> − μ)² / N</span></td><td>Pembagi N, dipakai jika data = populasi (bukan sampel).</td></tr>
+        <tr><td><strong>Simpangan Baku Sampel (s)</strong></td><td><span style="font-family:Cambria Math">s = √s²</span></td><td>Akar varians, satuannya sama dengan data asli.</td></tr>
+        <tr><td><strong>Koefisien Variasi (CV)</strong></td><td><span style="font-family:Cambria Math">CV = (s / x̄) × 100%</span></td><td>Penyebaran relatif, banding antar skala berbeda.</td></tr>
+        <tr><td><strong>Koragam (Koefisien Keragaman)</strong></td><td><span style="font-family:Cambria Math">CV juga bisa = (s / x̄) × 100%</span></td><td> padan CV, satuan persen.</td></tr>
+    </table>
+
+    <div class="card-formula">
+        <div class="label">Varians Sampel (PALING SERING KELUAR)</div>
+        <div class="formula">s² = Σ(x<sub>i</sub> − x̄)² / (n − 1)</div>
+        <div class="desc">Pembagi <strong>n − 1</strong> untuk sampel (koreksi bias Bessel). Untuk populasi, pembagi N. Soal sering menjebak pakai n, padahal harus n−1 jika data sampel.</div>
+    </div>
+
+    <div class="card-formula">
+        <div class="label">Koefisien Variasi (CV)</div>
+        <div class="formula">CV = (s / x̄) × 100%</div>
+        <div class="desc">Tanpa satuan. CV kecil = data relatif homogen. CV besar = data heterogen. Dipakai untuk banding penyebaran dua variabel dengan skala beda (mis. tinggi badan vs berat badan).</div>
+    </div>
+
+    <h3 class="sub" id="sub-3-3">3.3  Ukuran Kemiringan (Skewness)</h3>
+    <p><strong>Skewness</strong> = ukuran ketidaksimetrisan distribusi. Arah kemiringan ditentukan oleh ekor distribusi yang lebih panjang.</p>
+    <table>
+        <tr><th>Tipe</th><th>Bentuk</th><th>Hubungan Mean vs Median vs Modus</th><th>Contoh Nyata</th></tr>
+        <tr><td><strong>Skewness Positif</strong> (right-skewed)</td><td>Ekor ke kanan, data menumpuk di kiri</td><td>Mean &gt; Median &gt; Modus</td><td>Pendapatan (Income) — sedikit orang kaya di ekor kanan panjang</td></tr>
+        <tr><td><strong>Simetris</strong></td><td>Kiri-kanan sama</td><td>Mean ≈ Median ≈ Modus</td><td>IQ — distribusi normal</td></tr>
+        <tr><td><strong>Skewness Negatif</strong> (left-skewed)</td><td>Ekor ke kiri, data menumpuk di kanan</td><td>Mean &lt; Median &lt; Modus</td><td>Life Span (masa hidup) — sedikit orang meninggal muda di ekor kiri</td></tr>
+    </table>
+    <figure class="illustration">
+        <img src="sta2111_assets/skewness.png" alt="Tiga distribusi skewness: positif, simetris, negatif">
+        <figcaption><strong>Gambar 3.1 — Tiga bentuk distribusi:</strong> Skewness positif (ekor kanan, Mean&gt;Median&gt;Modus), simetris (≈), skewness negatif (ekor kiri, Mean&lt;Median&lt;Modus). Perhatikan: Mean selalu paling tertarik ke arah ekor (paling sensitif terhadap outlier), Modus paling diam.</figcaption>
+    </figure>
+    <div class="card-tip">
+        <strong class="label">TIPS HAFAL: Arah Ekor = Arah Skewness</strong>
+        "Ekor ke kanan" → skewness positif. "Ekor ke kiri" → skewness negatif. Mean paling tertarik ke arah ekor (paling sensitif), modus paling diam.
+    </div>
+    <div class="card-formula">
+        <div class="label">Koefisien Kemiringan Pearson</div>
+        <div class="formula">Sk = 3 (Mean − Median) / s</div>
+        <div class="desc">Sk &gt; 0 → miring kanan (positif). Sk &lt; 0 → miring kiri (negatif). Sk ≈ 0 → simetris.</div>
+    </div>
+</section>
+
+<!-- ================================================== BAB 4 ================================================== -->
+<section class="bab" id="bab-4">
+    <div class="bab-header">
+        <span class="bab-num">BAB 04</span>
+        <h2 class="bab-title">Eksplorasi Data (EDA)</h2>
+        <span class="bab-tag">Sering di Menjodohkan</span>
+    </div>
+
+    <p>Eksplorasi data (EDA) = langkah awal mengenal pola data sebelum analisis formal. Dikembangkan oleh <strong>John Tukey (1960-an, Princeton)</strong> yang prihatin para statistisi terlalu menekankan analisis kompleks dan mengabaikan cara sederhana untuk memeriksa data. Tukey merintis metode deskriptif baru dengan judul <em>Exploratory Data Analysis</em>.</p>
+    <p>Tiga alat utama EDA: <strong>Boxplot</strong>, <strong>Histogram</strong>, dan <strong>Scatter Plot</strong>. EDA dilakukan dengan memvisualisasikan data — pola yang sulit terlihat dari tabel angka akan jelas di grafik.</p>
+
+    <h3 class="sub" id="sub-4-1">4.1  Five-Number Summary</h3>
+    <p>Lima nilai kunci yang merangkum distribusi data:</p>
+    <ol>
+        <li><strong>Minimum</strong> — nilai terkecil data.</li>
+        <li><strong>Q1</strong> — kuartil pertama (25% data di bawah ini).</li>
+        <li><strong>Median (Q2)</strong> — nilai tengah (50% di bawah, 50% di atas).</li>
+        <li><strong>Q3</strong> — kuartil ketiga (75% data di bawah ini).</li>
+        <li><strong>Maximum</strong> — nilai terbesar data.</li>
+    </ol>
+    <p>Range = Max − Min. IQR = Q3 − Q1. Boxplot memvisualkan kelima nilai ini sekaligus.</p>
+    <figure class="illustration">
+        <img src="sta2111_assets/five_number_summary.png" alt="5-number summary pada garis bilangan">
+        <figcaption><strong>Gambar 4.1 — 5-Number Summary:</strong> Lima statistik kunci pada garis bilangan. Kotak IQR (Q1 sampai Q3) menampung 50% data tengah. Jarak Min-Q1 dan Q3-Max menunjukkan sebaran ekor distribusi.</figcaption>
+    </figure>
+
+    <h3 class="sub" id="sub-4-2">4.2  Boxplot (Diagram Kotak Garis)</h3>
+    <p>Boxplot dibangun dari 5-number summary. Strukturnya:</p>
+    <ul>
+        <li><strong>Kotak</strong> membentang dari Q1 ke Q3 (lebar = IQR).</li>
+        <li><strong>Garis median</strong> di dalam kotak (bisa di tengah, bisa geser).</li>
+        <li><strong>Whisker (garis bawah)</strong> dari Q1 ke "data terkecil dalam batas" — bukan selalu minimum!</li>
+        <li><strong>Whisker (garis atas)</strong> dari Q3 ke "data terbesar dalam batas".</li>
+        <li><strong>Pencilan</strong> digambar sebagai titik/asterisk di luar whisker.</li>
+    </ul>
+    <figure class="illustration">
+        <img src="sta2111_assets/boxplot_anatomy.png" alt="Anatomi boxplot dengan label lengkap">
+        <figcaption><strong>Gambar 4.2 — Anatomi Boxplot:</strong> Kotak Q1–Q3, garis median, whisker atas/bawah, pencilan (asterisk). PDB = Q1 − 1,5·IQR, PDA = Q3 + 1,5·IQR. Whisker berhenti pada data terbesar/terkecil yang MASIH di dalam [PDB, PDA], bukan pada PDB/PDA sendiri.</figcaption>
+    </figure>
+    <div class="card-formula">
+        <div class="label">Aturan Pencilan (IQR Rule)</div>
+        <div class="formula">Pencilan Atas:  x &gt; Q3 + 1,5 × IQR</div>
+        <div class="formula">Pencilan Bawah: x &lt; Q1 − 1,5 × IQR</div>
+        <div class="desc">PDA = Pagar Dalam Atas. PDB = Pagar Dalam Bawah. Whisker boxplot berhenti pada nilai data terbesar/terkecil yang MASIH DI DALAM batas ini.</div>
+    </div>
+    <h4 class="subsub">Langkah Buat Boxplot</h4>
+    <ol>
+        <li>Hitung Min, Q1, Median, Q3, Max.</li>
+        <li>Hitung IQR = Q3 − Q1.</li>
+        <li>Hitung PDB = Q1 − 1,5·IQR dan PDA = Q3 + 1,5·IQR.</li>
+        <li>Tandai data di luar [PDB, PDA] sebagai pencilan (asterisk).</li>
+        <li>Tarik whisker bawah dari Q1 ke data terkecil yang ≥ PDB.</li>
+        <li>Tarik whisker atas dari Q3 ke data terbesar yang ≤ PDA.</li>
+        <li>Gambar kotak Q1–Q3 + garis median di dalamnya.</li>
+    </ol>
+    <div class="card-info">
+        <strong class="label">BACA BENTUK BOXPLOT → TAHU SKEWNESS</strong>
+        Median di tengah kotak + whisker sama panjang → simetris. Median geser ke bawah + whisker atas lebih panjang → miring ke kanan (positif). Median geser ke atas + whisker bawah lebih panjang → miring ke kiri (negatif).
+    </div>
+
+    <h3 class="sub" id="sub-4-3">4.3  Pencilan: Univariat vs Multivariat</h3>
+    <p><strong>Pencilan (outlier)</strong> = nilai ekstrem yang jauh dari pola utama data. Dua jenis:</p>
+    <ul>
+        <li><strong>Pencilan Univariat</strong> — terlihat saat periksa satu variabel saja (mis. nilai 100 dari rentang 0–50). Terdeteksi via boxplot satu variabel.</li>
+        <li><strong>Pencilan Multivariat</strong> — tidak terlihat di boxplot satu variabel, tapi terlihat saat kombinasi 2+ variabel. Contoh: tinggi 160 cm &amp; berat 100 kg — di boxplot tinggi tidak ada pencilan (normal), di boxplot berat tidak ada pencilan (normal), tapi di scatter plot tinggi-vs-berat, kombinasi ini pencilan (berat terlalu besar untuk tinggi segitu).</li>
+    </ul>
+    <figure class="illustration">
+        <img src="sta2111_assets/scatter_plot.png" alt="Scatter plot dengan pencilan univariat dan multivariat">
+        <figcaption><strong>Gambar 4.3 — Scatter Plot:</strong> Untuk lihat hubungan 2 variabel numerik + deteksi pencilan multivariat. Kotak: Scatter plot dengan pencilan univariat (tinggi ekstrem) dan multivariat (kombinasi tinggi-berat yang aneh). Scatter plot adalah alat terbaik untuk deteksi pencilan multivariat.</figcaption>
+    </figure>
+    <div class="card-warning">
+        <strong class="label">PENANGANAN PENCILAN</strong>
+        Jangan langsung dibuang! Pertama selidiki: typo? error pengukuran? fenomena valid? Hapus hanya jika ada justifikasi kuat. Untuk uji statistik yang sensitif outlier (t-test, ANOVA), pertimbangkan transformasi log atau metode robust (median-based).
+    </div>
+
+    <h3 class="sub" id="sub-4-4">4.4  Pola Sebaran: Unimodal vs Bimodal</h3>
+    <p>Saat lihat histogram, perhatikan: (1) Apakah ada satu atau dua puncak? (2) Apakah simetris atau menjulur (skewed)? (3) Apakah ada nilai ekstrem?</p>
+    <figure class="illustration">
+        <img src="sta2111_assets/unimodal_bimodal.png" alt="Histogram unimodal vs bimodal">
+        <figcaption><strong>Gambar 4.4 — Unimodal vs Bimodal:</strong> Unimodal (kiri) = satu puncak, distribusi homogen. Bimodal (kanan) = dua puncak, mengindikasikan ada dua kelompok berbeda yang tercampur dalam data (mis. gabungan nilai IPA &amp; IPS, atau dua populasi berbeda).</figcaption>
+    </figure>
+    <ul>
+        <li><strong>Contoh skewness ke kiri</strong> (mean &lt; median): Life Span (masa hidup) — sedikit orang meninggal muda, ekor kiri panjang.</li>
+        <li><strong>Contoh simetris</strong> (mean ≈ median): IQ — bell curve normal.</li>
+        <li><strong>Contoh skewness ke kanan</strong> (mean &gt; median): Income (pendapatan) — sedikit orang kaya di ekor kanan panjang.</li>
+    </ul>
+
+    <h3 class="sub" id="sub-4-5">4.5  Eksplorasi Perbandingan Antar Grup</h3>
+    <p>Untuk membandingkan distribusi 2+ grup, gunakan <strong>boxplot side-by-side</strong> atau <strong>histogram overlay</strong>. Boxplot sangat efisien untuk ini karena menampilkan 5-statistik tiap grup sekaligus.</p>
+    <figure class="illustration">
+        <img src="sta2111_assets/side_by_side_boxplot.png" alt="Boxplot side-by-side untuk perbandingan antar grup">
+        <figcaption><strong>Gambar 4.5 — Boxplot Side-by-Side:</strong> Membandingkan distribusi 3 grup. Bisa langsung lihat: grup B median paling tinggi, grup C sebaran paling lebar (IQR besar), grup A paling sempit. Untuk banding distribusi banyak grup, boxplot lebih efisien daripada histogram overlay.</figcaption>
+    </figure>
+    <div class="card-info">
+        <strong class="label">CONTOH KLASIK</strong>
+        Penelitian SIRDS (Severe Idiopathic Respiratory Distress Syndrome) — bandingkan berat lahir bayi yang meninggal vs hidup. Boxplot side-by-side menunjukkan median berat bayi selamat &gt; bayi meninggal → indikasi hubungan berat lahir &amp; kelangsungan hidup.
+    </div>
+</section>
+
+<!-- ================================================== BAB 5 ================================================== -->
+<section class="bab" id="bab-5">
+    <div class="bab-header">
+        <span class="bab-num">BAB 05</span>
+        <h2 class="bab-title">Metode Survei</h2>
+        <span class="bab-tag">Konseptual</span>
+    </div>
+
+    <p>Survei = metode pengumpulan data dari sampel populasi untuk menjawab tujuan penelitian, biasanya dengan kuesioner/angket atau wawancara terstruktur. Survei berbeda dengan observasi (mengamati tanpa intervensi) dan eksperimen (membangkitkan data dengan perlakuan).</p>
+
+    <h3 class="sub" id="sub-5-1">5.1  Definisi &amp; Tahapan Survei</h3>
+    <p>Tiga komponen wajib survei: <strong>Definisi</strong> (apa yang diteliti), <strong>Tujuan</strong> (untuk apa), <strong>Instrumen</strong> (alat ukur, biasanya kuesioner). Tahapan:</p>
+    <ol>
+        <li>Rumuskan pertanyaan penelitian.</li>
+        <li>Definisikan populasi relevan.</li>
+        <li>Pilih metode sampling (probability / non-probability).</li>
+        <li>Cari sampling frame (daftar unit populasi).</li>
+        <li>Desain kuesioner yang valid &amp; reliable.</li>
+        <li>Lakukan survei lapangan.</li>
+        <li>Olah &amp; analisis data, tarik kesimpulan.</li>
+    </ol>
+
+    <h3 class="sub" id="sub-5-2">5.2  Sepuluh Metode Penarikan Contoh (Sampling)</h3>
+    <p>Dua kategori utama: <strong>Probability Sampling</strong> (berpeluang, hasil dapat digeneralisir ke populasi) dan <strong>Non-Probability Sampling</strong> (tidak berpeluang, tidak digeneralisir). Total 10 teknik (5 + 5):</p>
+    <table>
+        <tr><th>Probability Sampling (Acak, Dapat Digeneralisir)</th><th>Non-Probability Sampling (Tidak Acak, Tidak Digeneralisir)</th></tr>
+        <tr><td><strong>1. SRS</strong> — Acak Sederhana, populasi homogen</td><td><strong>1. Voluntary</strong> — Sukarela, responden mendaftar sendiri</td></tr>
+        <tr><td><strong>2. Systematic</strong> — Acak Sistematis, populasi terurut (interval k)</td><td><strong>2. Quota</strong> — Berkuota, mengikuti kuota tiap kelas</td></tr>
+        <tr><td><strong>3. Stratified</strong> — Acak Bertingkat, populasi berkelas</td><td><strong>3. Accidental/Convenience</strong> — Kebetulan, siapa yang ditemui</td></tr>
+        <tr><td><strong>4. Cluster</strong> — Acak Bergerombol, populasi bergerombol</td><td><strong>4. Purposive</strong> — Sengaja, memenuhi kriteria tertentu</td></tr>
+        <tr><td><strong>5. Multistage</strong> — Berperingkat, cakupan luas</td><td><strong>5. Snowball</strong> — Bola Salju, rujukan berantai antar responden</td></tr>
+    </table>
+    <figure class="illustration">
+        <img src="sta2111_assets/ten_sampling_methods.png" alt="Sepuluh metode sampling: 5 probability + 5 non-probability">
+        <figcaption><strong>Gambar 5.1 — Sepuluh Metode Sampling:</strong> Baris atas = 5 metode probability (acak, hasil dapat digeneralisir ke populasi). Baris bawah = 5 metode non-probability (tidak acak, tidak digeneralisir). Pemilihan metode bergantung pada: ada/tidak sampling frame, tingkat homogenitas populasi, biaya, dan tujuan inferensial.</figcaption>
+    </figure>
+
+    <h4 class="subsub">Detail 4 Probability Sampling Utama</h4>
+    <table>
+        <tr><th>Metode</th><th>Cara</th><th>Kapan Cocok</th><th>Kelebihan / Kekurangan</th></tr>
+        <tr><td><strong>SRS</strong></td><td>Tarik unit langsung dari daftar populasi</td><td>Populasi homogen, sampling frame lengkap</td><td>+ Sederhana, tidak bias. − Butuh sampling frame; bisa tidak proporsional kalau heterogen.</td></tr>
+        <tr><td><strong>Stratified</strong></td><td>Bagi populasi jadi strata (homogen-dalam), SRS di tiap stratum</td><td>Populasi heterogen dengan subkelompok jelas</td><td>+ Presisi tinggi, semua stratum terwakili. − Butuh info stratum di sampling frame.</td></tr>
+        <tr><td><strong>Cluster</strong></td><td>Bagi populasi jadi klaster (heterogen-dalam), acak klaster, survei semua unit di klaster terpilih</td><td>Populasi tersebar luas, survei langsung tiap unit mahal</td><td>+ Praktis &amp; murah untuk geografis besar. − Variansi antar klaster bisa tinggi.</td></tr>
+        <tr><td><strong>Systematic</strong></td><td>Pilih unit ke-k, k+interval, k+2·interval dari daftar acak</td><td>Daftar populasi berurutan, tidak ada pola periodik</td><td>+ Mudah di lapangan. − Berbahaya kalau ada pola periodik yang kena interval.</td></tr>
+    </table>
+    <div class="card-tip">
+        <strong class="label">STRATIFIED vs CLUSTER — Yang Sering Tertukar</strong>
+        Stratified: bagi populasi jadi strata homogen-dalam, lalu ambil <em>beberapa dari tiap stratum</em>. Tujuan: presisi. Cluster: bagi populasi jadi klaster heterogen-dalam, lalu ambil <em>beberapa klaster utuh</em>. Tujuan: efisiensi biaya.
+    </div>
+    <div class="card-info">
+        <strong class="label">MULTISTAGE = Cluster Berlapis</strong>
+        Multistage = sampling cluster dilakukan beberapa tahap. Mis. tahap 1: pilih provinsi secara acak. Tahap 2: di provinsi terpilih, pilih kabupaten secara acak. Tahap 3: di kabupaten terpilih, survei semua rumah tangga. Cocok untuk survei nasional dengan cakupan sangat luas.
+    </div>
+
+    <h3 class="sub" id="sub-5-3">5.3  Sampling Error vs Non-Sampling Error</h3>
+    <p>Total error = Sampling Error + Non-Sampling Error. Sampling error bisa dikecilkan dengan menambah ukuran sampel. Non-sampling error TIDAK bisa diatasi dengan menambah sampel — harus diperbaiki di desain/pelaksanaan.</p>
+    <figure class="illustration">
+        <img src="sta2111_assets/total_error_tree.png" alt="Diagram pohon Total Error">
+        <figcaption><strong>Gambar 5.2 — Total Error Tree:</strong> Total Error = Sampling Error + Non-Sampling Error. Non-Sampling Error bercabang ke Non-Response (Explicit/Implicit), Refusals, Interview Bias, Editing/Coding/Analyses. Sampling error bisa dikecilkan dengan naikkan n. Non-sampling error tidak!</figcaption>
+    </figure>
+    <table>
+        <tr><th>Tipe</th><th>Definisi</th><th>Contoh</th></tr>
+        <tr><td><strong>Sampling Error</strong></td><td>Selisih nilai sampel vs populasi karena kita ambil sampel, bukan sensus penuh</td><td>Estimasi rata-rata sampel 165 cm, populasi 167 cm. Selisih 2 cm.</td></tr>
+        <tr><td><strong>Non-Sampling Error (Bias)</strong></td><td>Selisih yang muncul BUKAN karena sampling, melainkan kesalahan desain/pelaksanaan</td><td>Kuesioner ambigu, responder tidak jujur, sampling frame tidak lengkap, salah input, non-response.</td></tr>
+    </table>
+
+    <h3 class="sub" id="sub-5-4">5.4  Kuesioner yang Baik — 4 Syarat + 5 Bagian</h3>
+    <p>Informasi yang didapat dari kuesioner HARUS memenuhi 4 syarat:</p>
+    <table>
+        <tr><th>Syarat</th><th>Definisi</th><th>Contoh Kegagalan</th></tr>
+        <tr><td><strong>1. Valid</strong></td><td>Mengukur yang seharusnya diukur</td><td>Pertanyaan "jam berapa Anda tidur?" untuk mengukur kualitas tidur — tidak valid (tidak menangkap kedalaman/gangguan tidur)</td></tr>
+        <tr><td><strong>2. Reliable</strong></td><td>Mengukur dengan konsisten (kalau diulang, hasil mirip)</td><td>Timbangan yang sering berubah-ubah angkanya</td></tr>
+        <tr><td><strong>3. Unbiased</strong></td><td>Tidak bias dalam mengukur</td><td>Responden dikira-kira jawabannya (mis. jumlah pupuk setahun lalu)</td></tr>
+        <tr><td><strong>4. Discriminating</strong></td><td>Dapat membedakan karakteristik antar responden</td><td>Pertanyaan yang semua orang jawab "ya" → tidak membedakan</td></tr>
+    </table>
+    <figure class="illustration">
+        <img src="sta2111_assets/kuesioner_structure.png" alt="Struktur 5 bagian kuesioner yang baik">
+        <figcaption><strong>Gambar 5.3 — Struktur Kuesioner 5 Bagian:</strong> (1) Halaman Sampul/Pengantar, (2) Petunjuk Pengisian, (3) Identitas Responden (opsional), (4) Pertanyaan Inti (4 blok tematik: Pengetahuan, Sikap, Perilaku, Harapan), (5) Penutup. Gunakan <em>skip logic</em> supaya responden tidak menjawab pertanyaan yang tidak relevan.</figcaption>
+    </figure>
+    <div class="card-tip">
+        <strong class="label">PRINSIP KUESIONER BAIK</strong>
+        Bahasa jelas &amp; netral · Hindari pertanyaan ganda ("Apakah Anda puas DAN akan beli lagi?") · Hindari pertanyaan mengarah (leading) · Pilihan lengkap &amp; saling lepas · Urutan logis (umum→khusus, non-sensitif→sensitif) · Uji coba (pilot test) sebelum survei besar.
+    </div>
+    <div class="card-info">
+        <strong class="label">KASUS BIAS KLASIK: LITERARY DIGEST 1936</strong>
+        Majalah Literary Digest kirim jutaan surat ke pemilih kelas menengah-atas (sampling frame BIAS ke kelas sosial tertentu), prediksi Landon menang. Faktanya Roosevelt menang besar. Pelajaran: sampel besar tapi tidak representatif = BIAS tetap besar.
+    </div>
+</section>
+
+<!-- ================================================== BAB 6 ================================================== -->
+<section class="bab" id="bab-6">
+    <div class="bab-header">
+        <span class="bab-num">BAB 06</span>
+        <h2 class="bab-title">Perancangan Percobaan</h2>
+        <span class="bab-tag">Konseptual</span>
+    </div>
+
+    <p>Eksperimen = studi yang sengaja memberi perlakuan kepada unit percobaan untuk mengamati respons. Tujuan eksperimen: mengetahui hubungan <strong>sebab-akibat</strong> antara perlakuan dan respons (bukan korelasi saja).</p>
+
+    <h3 class="sub" id="sub-6-1">6.1  Perbedaan Percobaan vs Survei</h3>
+    <figure class="illustration">
+        <img src="sta2111_assets/survey_vs_experiment.png" alt="Perbandingan survei vs percobaan">
+        <figcaption><strong>Gambar 6.1 — Survei vs Percobaan:</strong> Survei/observasi = mengamati apa adanya tanpa intervensi (data natural). Percobaan = sengaja memberi perlakuan &amp; mengukur respons untuk uji sebab-akibat.</figcaption>
+    </figure>
+
+    <h3 class="sub" id="sub-6-2">6.2  Terminologi Wajib &amp; 3 Prinsip Dasar</h3>
+    <table>
+        <tr><th>Istilah</th><th>Definisi</th></tr>
+        <tr><td><strong>Perlakuan (Treatment)</strong></td><td>Kondisi/faktor yang sengaja diberikan. Mis. pupuk A, B, C.</td></tr>
+        <tr><td><strong>Unit Percobaan</strong></td><td>Objek terkecil yang menerima perlakuan. Mis. satu petak tanaman.</td></tr>
+        <tr><td><strong>Ulangan (Replication)</strong></td><td>Jumlah unit yang menerima perlakuan sama. Mis. 3 ulangan = tiap perlakuan ke 3 unit.</td></tr>
+        <tr><td><strong>Respons (Response)</strong></td><td>Variabel yang diukur sebagai hasil. Mis. hasil panen (kg/ha).</td></tr>
+        <tr><td><strong>Faktor (Factor)</strong></td><td>Variabel bebas yang dikendalikan peneliti. Mis. pupuk, varietas, dosis.</td></tr>
+        <tr><td><strong>Taraf (Level)</strong></td><td>Nilai/kategori dari faktor. Mis. taraf pupuk A, B, C.</td></tr>
+    </table>
+    <table>
+        <tr><th>Prinsip</th><th>Definisi</th><th>Tujuan</th></tr>
+        <tr><td><strong>1. Pengacakan (Randomization)</strong></td><td>Setiap unit punya peluang sama untuk mendapat perlakuan tertentu</td><td>Jaga agar faktor pengganggu (unknown) tersebar merata &amp; tidak terkait dengan perlakuan</td></tr>
+        <tr><td><strong>2. Ulangan (Replication)</strong></td><td>Penerapan tiap perlakuan ke beberapa unit percobaan (≥2)</td><td>Estimasi ragam galat (untuk uji statistik), naikkan presisi</td></tr>
+        <tr><td><strong>3. Pengendalian Lokal (Local Control)</strong></td><td>Mengelompokkan unit ke kelompok homogen (block) sebelum pengacakan</td><td>Mengurangi variabilitas galat → presisi naik. Prinsip RAKL.</td></tr>
+    </table>
+    <div class="card-warning">
+        <strong class="label">WAJIB 3 PRINSIP</strong>
+        RAL wajib punya pengacakan + ulangan. RAKL punya ketiganya (tambah pengendalian lokal via kelompok). Rancangan tanpa ulangan = tidak bisa diuji statistiknya (tidak ada estimasi galat).
+    </div>
+
+    <h3 class="sub" id="sub-6-3">6.3  RAL vs RAKL vs RBSL</h3>
+    <p>Penamaan rancangan didasarkan pada <strong>rancangan perlakuan</strong> (Faktor Tunggal / Faktorial / Split Plot) × <strong>rancangan lingkungan</strong> (RAL / RAKL / RBSL). Untuk faktor tunggal, 3 jenis lingkungan:</p>
+    <table>
+        <tr><th>Rancangan</th><th>Kapan Dipakai</th><th>Struktur</th><th>Kelompok?</th></tr>
+        <tr><td><strong>RAL (Acak Lengkap)</strong></td><td>Unit seragam/homogen, tidak ada sumber variasi diketahui</td><td>t perlakuan × r ulangan → t·r unit. Acak penuh.</td><td>Tidak ada</td></tr>
+        <tr><td><strong>RAKL (Acak Kelompok Lengkap)</strong></td><td>Ada 1 arah sumber variasi diketahui (mis. gradien lahan)</td><td>t perlakuan × r ulangan dibagi ke r kelompok. Acak DI DALAM kelompok.</td><td>Ada (r kelompok)</td></tr>
+        <tr><td><strong>RBSL (Bujur Sangkar Latin)</strong></td><td>Ada 2 arah sumber variasi diketahui (mis. gradien + ketinggian)</td><td>Perlakuan disusun dalam matriks bujur sangkar. Tiap perlakuan muncul tepat 1× di tiap baris &amp; tiap lajur.</td><td>Ada (baris + lajur)</td></tr>
+    </table>
+    <figure class="illustration">
+        <img src="sta2111_assets/ral_vs_rak.png" alt="Layout RAL vs RAKL">
+        <figcaption><strong>Gambar 6.2 — RAL vs RAKL:</strong> RAL (kiri): 9 unit seragam, alokasi A/B/C acak penuh tanpa pengelompokan. RAKL (kanan): 9 unit dibagi ke 3 kelompok (border merah) berdasarkan sumber variasi (mis. kadar air tanah), acak DI DALAM tiap kelompok.</figcaption>
+    </figure>
+    <figure class="illustration">
+        <img src="sta2111_assets/rbsl_layout.png" alt="Layout RBSL (Bujur Sangkar Latin)">
+        <figcaption><strong>Gambar 6.3 — RBSL (Bujur Sangkar Latin):</strong> Untuk 2 arah sumber keragaman (mis. kadar air tanah × ketinggian). Tiap perlakuan muncul tepat 1× di tiap baris &amp; tiap lajur. Syarat: jumlah perlakuan = jumlah baris = jumlah lajur.</figcaption>
+    </figure>
+    <div class="card-tip">
+        <strong class="label">KAPAN PAKAI APA?</strong>
+        Lahan homogen → RAL. Lahan heterogen 1 arah → RAKL. Lahan heterogen 2 arah → RBSL. Mau lihat interaksi pupuk × varietas → Faktorial. Mau lihat interaksi DAN lahan heterogen 1 arah → RAKL Faktorial.
+    </div>
+
+    <h3 class="sub" id="sub-6-4">6.4  Faktorial &amp; Split Plot</h3>
+    <p>Jika banyak faktor yang dicobakan lebih dari 1, rancangan perlakuannya meliputi:</p>
+    <ul>
+        <li><strong>Rancangan Faktorial</strong> — pelajari 2+ faktor sekaligus + interaksi antar faktor. Mis. 2 faktor: pupuk (3 taraf) × varietas (2 taraf) = 6 perlakuan × r ulangan → 6r unit. Bisa dikombinasikan dengan RAL/RAKL/RBSL.</li>
+        <li><strong>Rancangan Split Plot</strong> — untuk faktor yang sulit/tidak mungkin diacak pada unit kecil (mis. pengairan skala lahan besar). Faktor utama pada petak besar (main plot), faktor kedua pada anak petak (subplot).</li>
+    </ul>
+
+    <h3 class="sub" id="sub-6-5">6.5  Bagan (Lay Out) Percobaan</h3>
+    <p>Bagan percobaan = tata letak perlakuan-perlakuan pada seluruh unit percobaan di lapangan. Tahap umum membangun bagan:</p>
+    <ol>
+        <li>Beri nomor perlakuan yang dicobakan (1, 2, 3, …, t).</li>
+        <li>Persiapkan unit percobaan sebanyak t·r (t perlakuan × r ulangan).</li>
+        <li>Beri nomor unit percobaan (1, 2, …, t·r atau penomoran mengikuti rancangan lingkungan).</li>
+        <li>Acak perlakuan untuk tiap unit percobaan. Metode: lotere, tabel bilangan acak, software (Excel rand()).</li>
+        <li>Catat hasil pengacakan sebagai bagan/denah percobaan.</li>
+    </ol>
+    <div class="card-info">
+        <strong class="label">ILUSTRASI RAL FAKTOR TUNGGAL</strong>
+        Percobaan pupuk N: taraf 0, 100, 200 kg/ha, dengan 3 ulangan → 9 unit. Pengacakan pakai Excel rand(), urutkan, alokasikan P1, P2, P3, P1, P2, P3, P1, P2, P3 sesuai urutan bilangan acak. Setiap unit punya peluang sama untuk mendapat perlakuan tertentu — itulah inti randomization.
+    </div>
+</section>
+
+<!-- ================================================== BAB 7: LATIHAN ================================================== -->
+<section class="bab" id="bab-7">
+    <div class="bab-header">
+        <span class="bab-num">BAB 07</span>
+        <h2 class="bab-title">Latihan Bagian C — Menjodohkan + Alasan</h2>
+        <span class="bab-tag">11 Soal</span>
+    </div>
+
+    <p>Format Bagian C UTS: 10 soal menjodohkan, masing-masing perlu <strong>alasan singkat</strong> (1–2 kalimat) yang menjelaskan kenapa pasangan itu benar. Berikut 10 soal latihan + 1 soal hitungan end-to-end.</p>
+
+    <h3 class="sub" id="sub-7-1">10 Soal Menjodohkan + Alasan</h3>
+
+    <div class="exam-q" id="soal-1">
+        <span class="q-num">SOAL 1</span>
+        <div class="q-text">Jodohkan konsep statistik dengan deskripsinya:</div>
+        <div class="q-options">
+            (A) Statistik  (1) Menggambarkan seluruh populasi<br>
+            (B) Parameter (2) Dihitung dari sampel<br>
+            (C) Statistika (3) Cabang ilmu yang mempelajari cara mengolah data
+        </div>
+        <div class="q-answer"><strong>Jawaban:</strong> A-2, B-1, C-3. <strong>Alasan:</strong> Statistik = nilai dari sampel (suffix tanpa "-a"), Parameter = nilai populasi, Statistik-a = nama ilmu. Huruf akhir "-a" menandakan disiplin ilmu, bukan nilai.</div>
+    </div>
+
+    <div class="exam-q" id="soal-2">
+        <span class="q-num">SOAL 2</span>
+        <div class="q-text">Jodohkan jenis data dengan contohnya:</div>
+        <div class="q-options">
+            (A) Nominal  (1) Tingkat kepuasan: kecewa - netral - puas<br>
+            (B) Ordinal  (2) Tinggi badan 167,3 cm<br>
+            (C) Diskrit  (3) Jenis kelamin: L/P<br>
+            (D) Kontinu  (4) Jumlah anak 3 orang
+        </div>
+        <div class="q-answer"><strong>Jawaban:</strong> A-3, B-1, C-4, D-2. <strong>Alasan:</strong> Nominal = label tanpa urutan (gender). Ordinal = ada urutan tak setara (kepuasan). Diskrit = hasil hitung bulat (jumlah anak). Kontinu = hasil ukur bisa pecahan (tinggi badan).</div>
+    </div>
+
+    <div class="exam-q" id="soal-3">
+        <span class="q-num">SOAL 3</span>
+        <div class="q-text">Jodohkan metode sampling dengan karakteristiknya:</div>
+        <div class="q-options">
+            (A) Stratified         (1) Bagi populasi jadi kelompok geografis, survei semua unit di klaster terpilih<br>
+            (B) Cluster            (2) Ambil unit ke-k, k+interval, k+2·interval dari daftar<br>
+            (C) Systematic         (3) Bagi populasi jadi strata homogen, SRS di tiap stratum<br>
+            (D) SRS                (4) Setiap unit punya peluang sama terpilih langsung
+        </div>
+        <div class="q-answer"><strong>Jawaban:</strong> A-3, B-1, C-2, D-4. <strong>Alasan:</strong> Stratified = sampling presisi tinggi dengan strata homogen. Cluster = efisiensi biaya geografis, ambil klaster utuh. Systematic = interval teratur dari daftar. SRS = acak penuh dari sampling frame.</div>
+    </div>
+
+    <div class="exam-q" id="soal-4">
+        <span class="q-num">SOAL 4</span>
+        <div class="q-text">Jodohkan ukuran pemusatan dengan situasi yang tepat:</div>
+        <div class="q-options">
+            (A) Mean     (1) Data miring, ada pencilan ekstrim<br>
+            (B) Median   (2) Data kategorik nominal, paling sering muncul<br>
+            (C) Modus    (3) Data simetris, distribusi normal-ish
+        </div>
+        <div class="q-answer"><strong>Jawaban:</strong> A-3, B-1, C-2. <strong>Alasan:</strong> Mean sensitif outlier, hanya untuk data simetris. Median robust, cocok untuk data miring/pencilan. Modus untuk data kategorik yang ada nilai berulang.</div>
+    </div>
+
+    <div class="exam-q" id="soal-5">
+        <span class="q-num">SOAL 5</span>
+        <div class="q-text">Jodohkan ukuran penyebaran dengan rumusnya:</div>
+        <div class="q-options">
+            (A) Range           (1) s = √(Σ(x−x̄)² / (n−1))<br>
+            (B) IQR             (2) R = X<sub>max</sub> − X<sub>min</sub><br>
+            (C) Varians         (3) CV = (s/x̄) × 100%<br>
+            (D) Koef. Variasi   (4) IQR = Q3 − Q1<br>
+            (E) Simpangan Baku  (5) s² = Σ(x−x̄)² / (n−1)
+        </div>
+        <div class="q-answer"><strong>Jawaban:</strong> A-2, B-4, C-5, D-3, E-1. <strong>Alasan:</strong> Range = selisih max-min. IQR = lebar 50% tengah. Varians = kuadrat simpangan, pembagi n−1 untuk sampel. Simpangan baku = akar varians. CV = penyebaran relatif (tanpa satuan).</div>
+    </div>
+
+    <div class="exam-q" id="soal-6">
+        <span class="q-num">SOAL 6</span>
+        <div class="q-text">Jodohkan jenis skewness dengan hubungan Mean/Median/Modus:</div>
+        <div class="q-options">
+            (A) Simetris              (1) Mean &gt; Median &gt; Modus<br>
+            (B) Skewness Positif      (2) Mean ≈ Median ≈ Modus<br>
+            (C) Skewness Negatif      (3) Mean &lt; Median &lt; Modus
+        </div>
+        <div class="q-answer"><strong>Jawaban:</strong> A-2, B-1, C-3. <strong>Alasan:</strong> Simetris: ketiganya sama. Positif (ekor kanan panjang): Mean paling tertarik ke kanan (paling besar). Negatif (ekor kiri panjang): Mean paling tertarik ke kiri (paling kecil). Arah ekor = arah skewness.</div>
+    </div>
+
+    <div class="exam-q" id="soal-7">
+        <span class="q-num">SOAL 7</span>
+        <div class="q-text">Jodohkan komponen TDF dengan definisinya:</div>
+        <div class="q-options">
+            (A) Batas Kelas     (1) Batas bawah/atas yang sudah ditambah/dikurangi 0,5 untuk data kontinu<br>
+            (B) Tepi Kelas      (2) Nilai tengah kelas, dipakai untuk hitungan<br>
+            (C) Titik Tengah    (3) Batas inklusif kelas, mis. 60–69<br>
+            (D) Frekuensi Relatif (4) Proporsi frekuensi kelas terhadap total
+        </div>
+        <div class="q-answer"><strong>Jawaban:</strong> A-3, B-1, C-2, D-4. <strong>Alasan:</strong> Batas kelas = batas asli (inklusif). Tepi kelas = batas sesungguhnya (untuk data kontinu, ±0,5). Titik tengah = (BB+BA)/2 dipakai untuk mean berkelompok. Frekuensi relatif = f<sub>i</sub>/n × 100%.</div>
+    </div>
+
+    <div class="exam-q" id="soal-8">
+        <span class="q-num">SOAL 8</span>
+        <div class="q-text">Jodohkan diagram dengan waktu pakai yang tepat:</div>
+        <div class="q-options">
+            (A) Histogram      (1) Data kategorik, kategori ≤ 7, ingin lihat proporsi<br>
+            (B) Bar Chart      (2) Data numerik kontinu yang dikelompokkan ke TDF, batang menempel<br>
+            (C) Pie Chart      (3) Frekuensi kumulatif (≤ / ≥)<br>
+            (D) Ogive          (4) Data kategorik, ingin bandingkan frekuensi antar kategori
+        </div>
+        <div class="q-answer"><strong>Jawaban:</strong> A-2, B-4, C-1, D-3. <strong>Alasan:</strong> Histogram: data kontinu, batang menempel, sumbu-X tepi kelas. Bar chart: kategorik, batang terpisah, bandingkan antar kategori. Pie: proporsi total 100%, kategori sedikit. Ogive: frekuensi kumulatif untuk lihat persentil.</div>
+    </div>
+
+    <div class="exam-q" id="soal-9">
+        <span class="q-num">SOAL 9</span>
+        <div class="q-text">Jodohkan prinsip perancangan percobaan dengan fungsinya:</div>
+        <div class="q-options">
+            (A) Pengacakan           (1) Estimasi ragam galat &amp; naikkan presisi<br>
+            (B) Ulangan               (2) Kelompok homogen sebelum pengacakan<br>
+            (C) Pengendalian Lokal    (3) Peluang sama untuk semua unit dapat perlakuan
+        </div>
+        <div class="q-answer"><strong>Jawaban:</strong> A-3, B-1, C-2. <strong>Alasan:</strong> Randomization: hilangkan bias alokasi perlakuan. Replication: memberi derajat bebas untuk galat → uji statistik valid. Local Control: kurangi variabilitas dalam galat via blocking → presisi naik.</div>
+    </div>
+
+    <div class="exam-q" id="soal-10">
+        <span class="q-num">SOAL 10</span>
+        <div class="q-text">Jodohkan rancangan percobaan dengan situasi yang tepat:</div>
+        <div class="q-options">
+            (A) RAL                  (1) Ada 2 faktor, ingin lihat efek utama + interaksi<br>
+            (B) RAKL                 (2) Unit percobaan seragam, tidak ada sumber variasi diketahui<br>
+            (C) Faktorial            (3) Ada sumber variasi 1 arah yang diketahui (mis. gradien lahan)<br>
+            (D) RBSL                 (4) Ada sumber variasi 2 arah (mis. gradien + ketinggian)
+        </div>
+        <div class="q-answer"><strong>Jawaban:</strong> A-2, B-3, C-1, D-4. <strong>Alasan:</strong> RAL = unit seragam, acak penuh. RAKL = 1 arah variasi, dibentuk kelompok. RBSL = 2 arah variasi, matriks bujur sangkar. Faktorial = 2+ faktor dipelajari sekaligus untuk lihat efek utama dan interaksi.</div>
+    </div>
+
+    <h3 class="sub" id="sub-7-2">Soal Hitungan End-to-End (rangkum Bab 2, 3, 4)</h3>
+    <div class="card">
+        <strong>DATA MENTAH:</strong> Nilai UTS STA2111 (skala 0–100) 20 mahasiswa:<br>
+        <span style="font-family: monospace; font-size: 13px;">45 52 58 62 65 67 68 72 74 75 76 78 80 82 84 86 88 92 95 98</span>
+    </div>
+    <h4 class="subsub">Langkah 1 — 5-Number Summary</h4>
+    <ul>
+        <li><strong>Min</strong> = 45</li>
+        <li><strong>Q1</strong>: posisi = (n+1)/4 = 5,25 → interpolasi: Q1 = 65 + 0,25·(67−65) = 65,5</li>
+        <li><strong>Median (Q2)</strong>: posisi = (n+1)/2 = 10,5 → rata-rata data ke-10 &amp; ke-11 = (75+76)/2 = 75,5</li>
+        <li><strong>Q3</strong>: posisi = 3(n+1)/4 = 15,75 → interpolasi: Q3 = 84 + 0,75·(86−84) = 85,5</li>
+        <li><strong>Max</strong> = 98</li>
+    </ul>
+    <h4 class="subsub">Langkah 2 — Range, IQR, Pencilan</h4>
+    <ul>
+        <li><strong>Range</strong> = 98 − 45 = 53</li>
+        <li><strong>IQR</strong> = 85,5 − 65,5 = 20</li>
+        <li><strong>PDB</strong> = 65,5 − 1,5·20 = 35,5 → tidak ada data &lt; 35,5</li>
+        <li><strong>PDA</strong> = 85,5 + 1,5·20 = 115,5 → tidak ada data &gt; 115,5</li>
+        <li><strong>Kesimpulan</strong>: tidak ada pencilan.</li>
+    </ul>
+    <h4 class="subsub">Langkah 3 — Mean, Varians, Simpangan Baku, CV</h4>
+    <ul>
+        <li><strong>Σx</strong> = 1.495 → <strong>Mean (x̄)</strong> = 1.495/20 = 74,75</li>
+        <li><strong>Σ(x−x̄)²</strong> = 3.904,75 → <strong>s²</strong> = 3.904,75/19 = 205,51</li>
+        <li><strong>s</strong> = √205,51 ≈ 14,34</li>
+        <li><strong>CV</strong> = (14,34/74,75) × 100% ≈ 19,18% (penyebaran sedang)</li>
+    </ul>
+    <h4 class="subsub">Langkah 4 — Skewness</h4>
+    <ul>
+        <li>Mean = 74,75 &lt; Median = 75,5 → Mean &lt; Median</li>
+        <li><strong>Pearson Sk</strong> = 3·(74,75 − 75,5)/14,34 ≈ −0,157</li>
+        <li>Sk &lt; 0 → <strong>skewness negatif lemah</strong> (mendekati simetris)</li>
+    </ul>
+    <h4 class="subsub">Langkah 5 — Visual Boxplot</h4>
+    <p>Whisker bawah dari Q1 (65,5) ke Min (45). Kotak Q1 (65,5) → Q3 (85,5), garis median di 75,5. Whisker atas dari Q3 ke Max (98). Median sedikit geser ke atas → konsisten dengan skewness negatif lemah.</p>
+    <h4 class="subsub">Langkah 6 — TDF</h4>
+    <p>Sturges: k = 1 + 3,322·log(20) ≈ 5,32 → 6 kelas. Range 53, lebar ≈ 53/6 ≈ 9 → pakai 10:</p>
+    <table>
+        <tr><th>Kelas</th><th>Batas</th><th>Tepi</th><th>Titik Tengah</th><th>f</th><th>f<sub>rel</sub></th><th>f<sub>kum</sub></th></tr>
+        <tr><td>1</td><td>45–54</td><td>44,5–54,5</td><td>49,5</td><td>2</td><td>10%</td><td>2</td></tr>
+        <tr><td>2</td><td>55–64</td><td>54,5–64,5</td><td>59,5</td><td>2</td><td>10%</td><td>4</td></tr>
+        <tr><td>3</td><td>65–74</td><td>64,5–74,5</td><td>69,5</td><td>4</td><td>20%</td><td>8</td></tr>
+        <tr><td>4</td><td>75–84</td><td>74,5–84,5</td><td>79,5</td><td>6</td><td>30%</td><td>14</td></tr>
+        <tr><td>5</td><td>85–94</td><td>84,5–94,5</td><td>89,5</td><td>4</td><td>20%</td><td>18</td></tr>
+        <tr><td>6</td><td>95–104</td><td>94,5–104,5</td><td>99,5</td><td>2</td><td>10%</td><td>20</td></tr>
+    </table>
+    <p>Mean berkelompok: x̄ = Σ(f<sub>i</sub>·x<sub>i</sub>)/n = (2·49,5 + 2·59,5 + 4·69,5 + 6·79,5 + 4·89,5 + 2·99,5)/20 = 1.530/20 = 76,5 (sedikit beda dari mean data mentah karena pendekatan titik tengah).</p>
+    <h4 class="subsub">Langkah 7 — Simpulan Akhir</h4>
+    <div class="card-tip">
+        <strong class="label">INTERPRETASI</strong>
+        Distribusi nilai UTS STA2111 cenderung <strong>simetris dengan sedikit miring ke kiri</strong> (Sk ≈ −0,16). Tidak ada pencilan. Penyebaran relatif (CV ≈ 19%) tergolong sedang — kelompok relatif homogen. Median 75,5 &gt; Mean 74,75 → sebagian besar mahasiswa nilai di atas rata-rata.
+    </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+    <h3>Strategi Ujian Besok</h3>
+    <p>Baca tiap soal dengan tenang. Untuk Bagian C (Menjodohkan + Alasan):</p>
+    <div class="checklist">
+        <h4>Checklist Sebelum Jawab</h4>
+        <ul>
+            <li>Identifikasi dulu konsep yang diuji (mean vs median, RAL vs RAKL, dst.)</li>
+            <li>Untuk soal hitungan: urutkan data, hitung 5-number summary SEBELUM lihat pertanyaan</li>
+            <li>Tulis alasan 1–2 kalimat — bukan sekadar jawaban A/B/C/D</li>
+            <li>Keyword kunci: "robust terhadap outlier", "ekor ke kanan = positif", "n−1 agar tidak bias"</li>
+            <li>Cek satuan: Range sama satuan data, varians satuan kuadrat, s = akar varians kembali ke satuan asli</li>
+            <li>CV tanpa satuan — gunakan untuk banding penyebaran antar skala beda</li>
+            <li>Jika ragu TDF: batas kelas = inklusif (60–69), tepi kelas = ±0,5 (59,5–69,5)</li>
+            <li>Boxplot: whisker berhenti pada data terbesar dalam PDA, bukan pada PDA sendiri</li>
+            <li>3 prinsip percobaan: Randomization + Replication + Local Control</li>
+            <li>Stratified (presisi) vs Cluster (efisiensi biaya)</li>
+            <li>10 teknik sampling: 5 probability (SRS/Systematic/Stratified/Cluster/Multistage) + 5 non-probability (Voluntary/Quota/Accidental/Purposive/Snowball)</li>
+            <li>4 Syarat kuesioner: Valid, Reliable, Unbiased, Discriminating</li>
+            <li>5 Bagian kuesioner: Sampul/Petunjuk/Identitas/Pertanyaan Inti/Penutup</li>
+        </ul>
+    </div>
+    <p style="margin-top: 32px; color: #f0c879; font-weight: 700; letter-spacing: 0.08em;">Selamat belajar, semoga UTS STA2111 lancar!</p>
+    <p style="font-size: 11px; color: #b6d4cc;">Sumber: 6 PDF kuliah STA2111-01 sampai 06 (IPB) + smartstat.info + disusun sebagai rangkuman belajar mandiri.</p>
+</footer>
+
+</main>
+
+<!-- ============ RIGHT SIDEBAR (FORMULA QUICK REF) ============ -->
+<aside class="formula-side" id="formulaSide">
+    <h4>📐 RUMUS PEMUSATAN</h4>
+    <div class="formula-item">
+        <div class="name">Mean Sampel</div>
+        <div class="eq">x̄ = Σx<sub>i</sub> / n</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Mean Berkelompok</div>
+        <div class="eq">x̄ = Σ(f<sub>i</sub>·x<sub>i</sub>) / n</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Median</div>
+        <div class="eq">data ke-(n+1)/2</div>
+    </div>
+
+    <h4>📊 RUMUS PENYEBARAN</h4>
+    <div class="formula-item">
+        <div class="name">Range</div>
+        <div class="eq">R = X<sub>max</sub> − X<sub>min</sub></div>
+    </div>
+    <div class="formula-item">
+        <div class="name">IQR</div>
+        <div class="eq">IQR = Q3 − Q1</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Varians Sampel</div>
+        <div class="eq">s² = Σ(x−x̄)² / (n−1)</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Varians Populasi</div>
+        <div class="eq">σ² = Σ(x−μ)² / N</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Simpangan Baku</div>
+        <div class="eq">s = √s²</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Koefisien Variasi</div>
+        <div class="eq">CV = (s/x̄) × 100%</div>
+    </div>
+
+    <h4>📈 RUMUS KEMIRINGAN</h4>
+    <div class="formula-item">
+        <div class="name">Pearson Skewness</div>
+        <div class="eq">Sk = 3(Mean − Median) / s</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Positif: Sk &gt; 0</div>
+        <div class="eq">Mean &gt; Median &gt; Modus</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Negatif: Sk &lt; 0</div>
+        <div class="eq">Mean &lt; Median &lt; Modus</div>
+    </div>
+
+    <h4>🎯 RUMUS TDF</h4>
+    <div class="formula-item">
+        <div class="name">Banyaknya Kelas (Sturges)</div>
+        <div class="eq">k = 1 + 3,322·log(n)</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Lebar Kelas</div>
+        <div class="eq">i = (X<sub>max</sub>−X<sub>min</sub>) / k</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Titik Tengah</div>
+        <div class="eq">x<sub>i</sub> = (BB+BA)/2</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Frekuensi Relatif</div>
+        <div class="eq">f<sub>rel</sub> = f<sub>i</sub>/n × 100%</div>
+    </div>
+
+    <h4>🛡 PENCILAN</h4>
+    <div class="formula-item">
+        <div class="name">Pagar Atas (PDA)</div>
+        <div class="eq">PDA = Q3 + 1,5·IQR</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Pagar Bawah (PDB)</div>
+        <div class="eq">PDB = Q1 − 1,5·IQR</div>
+    </div>
+
+    <h4>🎲 KUARTIL</h4>
+    <div class="formula-item">
+        <div class="name">Posisi Q1</div>
+        <div class="eq">(n+1)/4</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Posisi Q2 (Median)</div>
+        <div class="eq">(n+1)/2</div>
+    </div>
+    <div class="formula-item">
+        <div class="name">Posisi Q3</div>
+        <div class="eq">3(n+1)/4</div>
+    </div>
+</aside>
+
+</div>
+
+<script>
+// ============ SCROLL SPY (highlight active section in sidebar) ============
+const navItems = document.querySelectorAll('.nav-item');
+const sections = document.querySelectorAll('section.bab, h3.sub');
+
+function updateActiveNav() {
+    let current = '';
+    const scrollY = window.scrollY + 100; // offset for topbar
+    sections.forEach(s => {
+        if (scrollY >= s.offsetTop) {
+            current = s.id;
+        }
+    });
+    if (current) {
+        navItems.forEach(item => {
+            item.classList.remove('active');
+            if (item.getAttribute('href') === '#' + current) {
+                item.classList.add('active');
+            }
+        });
+    }
+}
+window.addEventListener('scroll', updateActiveNav, { passive: true });
+updateActiveNav();
+
+// ============ SEARCH ============
+const searchBox = document.getElementById('searchBox');
+const allSections = document.querySelectorAll('section.bab, h3.sub, p, li, td, .card-formula, .card-tip, .card-warning, .card-info, .exam-q');
+
+searchBox.addEventListener('input', function() {
+    const query = this.value.trim().toLowerCase();
+    // Clear previous highlights
+    document.querySelectorAll('.search-highlight').forEach(el => {
+        const parent = el.parentNode;
+        parent.replaceChild(document.createTextNode(el.textContent), el);
+        parent.normalize();
+    });
+    if (!query || query.length < 3) return;
+
+    // Find matching sections
+    let firstMatch = null;
+    document.querySelectorAll('section.bab').forEach(sec => {
+        const text = sec.textContent.toLowerCase();
+        if (text.includes(query)) {
+            if (!firstMatch) firstMatch = sec;
+        }
+    });
+    if (firstMatch) {
+        firstMatch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+});
+
+// ============ KEYBOARD SHORTCUT: "/" to focus search ============
+document.addEventListener('keydown', function(e) {
+    if (e.key === '/' && document.activeElement !== searchBox) {
+        e.preventDefault();
+        searchBox.focus();
+    }
+    if (e.key === 'Escape' && document.activeElement === searchBox) {
+        searchBox.value = '';
+        searchBox.blur();
+    }
+});
+</script>
+
+</body>
+</html>
