@@ -11111,8 +11111,8 @@
       "True",
       "False"
     ],
-    "a": 0,
-    "e": "Benar, RBSL (Rancangan Bujur Sangkar Latin) membagi lahan menjadi blok-blok untuk mengendali satu sumber keragaman, sedangkan RBSL mengendali dua sumber.",
+    "a": 1,
+    "e": "Salah. RAKL (Rancangan Acak Kelompok Lengkap) digunakan untuk SATU sumber keragaman lingkungan. RBSL (Rancangan Bujur Sangkar Latin) yang digunakan untuk DUA sumber keragaman (mis. baris dan lajur).",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
     "id": 830
@@ -11863,8 +11863,8 @@
       "True",
       "False"
     ],
-    "a": 0,
-    "e": "RBSL (Rancangan Bujur Sangkar Latin) digunakan untuk mengendalikan dua sumber keragaman lingkungan, misalnya baris dan kolom dalam lahan. RAKL hanya untuk satu sumber.",
+    "a": 1,
+    "e": "Salah. RAKL digunakan bila terdapat SATU sumber keragaman lingkungan yang diketahui. RBSL (Rancangan Bujur Sangkar Latin) yang digunakan bila terdapat DUA sumber keragaman.",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
     "id": 887
@@ -12155,8 +12155,8 @@
       "True",
       "False"
     ],
-    "a": 1,
-    "e": "RAKL digunakan bila terdapat SATU sumber keragaman lingkungan yang diketahui. RBSL (Rancangan Bujur Sangkar Latin) yang digunakan untuk DUA sumber keragaman.",
+    "a": 0,
+    "e": "Benar. RAKL (Rancangan Acak Kelompok Lengkap) memang digunakan untuk SATU sumber keragaman lingkungan yang diketahui.",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
     "id": 909
