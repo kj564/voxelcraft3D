@@ -301,7 +301,7 @@
       "False",
       "True"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Hal ini sesuai dengan poin penting yang disampaikan bahwa data perlu diolah dengan kaidah statistika yang benar untuk menjadi informasi yang bermanfaat.",
     "topic": "Konsep Dasar Statistika - Apa dan Mengapa Statistika",
     "source": "STA2111-Kuliah-01.pdf",
@@ -1075,7 +1075,7 @@
       "False",
       "True"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Hal ini sesuai dengan poin penting di materi yang menyatakan bahwa data diolah dengan kaidah statistika yang benar untuk menghasilkan informasi yang bermanfaat.",
     "topic": "Konsep Dasar Statistika - Apa dan Mengapa Statistika",
     "source": "STA2111-Kuliah-01.pdf",
@@ -1099,7 +1099,7 @@
       "False",
       "True"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Hal ini sesuai dengan definisi yang tercantum dalam slide 'Apa dan Mengapa Statistika' yang menyatakan statistika mengubah data menjadi informasi untuk pengambilan keputusan.",
     "topic": "Konsep Dasar Statistika - Definisi dan Tujuan",
     "source": "STA2111-Kuliah-01.pdf",
@@ -2611,7 +2611,7 @@
       "False",
       "True"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Pernyataan salah karena pie chart digunakan untuk data kategorik, sedangkan data numerik kontinu sebaiknya disajikan dengan histogram.",
     "topic": "Penyajian Data - Grafik",
     "source": "STA2111-Kuliah-02.pdf",
@@ -2635,7 +2635,7 @@
       "False",
       "True"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Pernyataan salah karena tingkat pendidikan memiliki urutan atau peringkat, sehingga skalanya adalah ordinal, bukan nominal.",
     "topic": "Penyajian Data - Tipe Data",
     "source": "STA2111-Kuliah-02.pdf",
@@ -2659,7 +2659,7 @@
       "False",
       "True"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Pernyataan salah karena 'Bin Range' dalam Excel mengacu pada rentang batas (kelompok) kelas untuk mengelompokkan data, bukan data mentah itu sendiri.",
     "topic": "Penyajian Data - Histogram di Excel",
     "source": "STA2111-Kuliah-02.pdf",
@@ -3555,7 +3555,7 @@
       "False",
       "True"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Diagram Pareto memang menggabungkan bar chart dan garis frekuensi kumulatif, namun tujuannya adalah untuk mengidentifikasi 'vital few' atau kategori yang paling signifikan berdasarkan frekuensi.",
     "topic": "Penyajian Data - Diagram Pareto",
     "source": "STA2111-Kuliah-02.pdf",
@@ -4969,7 +4969,7 @@
       "False",
       "True"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Benar, sesuai dengan definisi dalam PDF, rata-rata aritmetika adalah ukuran pemusatan yang paling umum karena merupakan ukuran yang menimbang pusat massa dari suatu peubah numerik.",
     "topic": "Peringkasan Data - Ukuran Pemusatan",
     "source": "STA2111-Kuliah-03.pdf",
@@ -5041,7 +5041,7 @@
       "False",
       "True"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Benar, sesuai dengan aturan empirikal yang dijelaskan dalam PDF, 95% data terletak dalam interval ±2σ dari μ.",
     "topic": "Peringkasan Data - Ukuran Penyebaran",
     "source": "STA2111-Kuliah-03.pdf",
@@ -5514,7 +5514,7 @@
       "Hubungan antara X dan Y sangat kuat"
     ],
     "a": 0,
-    "e": "Kovarians negifatif menunjukkan bahwa hubungan linier antara X dan Y bersifat negatif, artinya saat nilai X cenderung naik, nilai Y cenderung turun, dan sebaliknya.",
+    "e": "Kovarians negatif menunjukkan bahwa hubungan linier antara X dan Y bersifat negatif, artinya saat nilai X cenderung naik, nilai Y cenderung turun, dan sebaliknya.",
     "topic": "Peringkasan Data - Kovarians",
     "source": "STA2111-Kuliah-03.pdf",
     "id": 411
@@ -5591,7 +5591,7 @@
       "False",
       "True"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Rata-rata terboboti digunakan memberikan bobot yang berbeda pada setiap nilai pengamatan sesuai dengan tingkat kepentingannya.",
     "topic": "Peringkasan Data - Mean Terboboti",
     "source": "STA2111-Kuliah-03.pdf",
@@ -9349,7 +9349,7 @@
       "False",
       "True"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Purposive sampling memilih responden berdasarkan kriteria tertentu yang sesuai dengan tujuan survei.",
     "topic": "Metode Survei - Metode Penarikan Contoh",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9726,7 +9726,7 @@
     "id": 725
   },
   {
-    "q": "Seorang peneliti ingin meneliti tentang persepara para penghobi tanaman hias langka di Indonesia. Untuk menemukan responden, peneliti pertama-tama mencari satu penghobi tanaman hias dan meminta nama-nama penghobi lain yang mungkin bisa dihubungi. Teknik penarikan contoh yang digunakan adalah...",
+    "q": "Seorang peneliti ingin meneliti tentang persepsi para penghobi tanaman hias langka di Indonesia. Untuk menemukan responden, peneliti pertama-tama mencari satu penghobi tanaman hias dan meminta nama-nama penghobi lain yang mungkin bisa dihubungi. Teknik penarikan contoh yang digunakan adalah...",
     "o": [
       "Penarikan Contoh Bertujuan",
       "Penarikan Contoh Sukarela",
@@ -11230,7 +11230,7 @@
     "id": 839
   },
   {
-    "q": "Seorang peneliti ingin menguji empat varietas padi di lahan yang memiliki keragaman kesuburan tanah dari utara ke selatan. Rancangan percobaan yang paling tepat untuk mengendaliikan dua sumber keragaman ini adalah...",
+    "q": "Seorang peneliti ingin menguji empat varietas padi di lahan yang memiliki keragaman kesuburan tanah dari utara ke selatan. Rancangan percobaan yang paling tepat untuk mengendalikan dua sumber keragaman ini adalah...",
     "o": [
       "Rancangan Acak Lengkap (RAL)",
       "Rancangan Acak Blok (RAB)",
@@ -11238,7 +11238,7 @@
       "Rancangan Acak Kelompok (RAK)"
     ],
     "a": 2,
-    "e": "RAKL digunakan untuk mengendaliikan dua sumber keragaman lingkungan, dalam hal ini blok baris dan blok lajur.",
+    "e": "RAKL digunakan untuk mengendalikan dua sumber keragaman lingkungan, dalam hal ini blok baris dan blok lajur.",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
     "id": 840
@@ -11280,7 +11280,7 @@
       "Rancangan Acak Lengkap (RAL)"
     ],
     "a": 2,
-    "e": "Rancangan Acak Blok (RAB) digunakan untuk mengendaliikan satu sumber keragaman lingkungan (blok), dengan setiap perlakuan muncul sekali dalam setiap blok.",
+    "e": "Rancangan Acak Blok (RAB) digunakan untuk mengendalikan satu sumber keragaman lingkungan (blok), dengan setiap perlakuan muncul sekali dalam setiap blok.",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
     "id": 843
@@ -11386,7 +11386,7 @@
     "id": 851
   },
   {
-    "q": "Rancangan Acak Kelompok Lintang (RAKL) digunakan bila terdapat dua arah sumber keragaman lingkungan yang perlu dikendalikan.",
+    "q": "Rancangan Acak Kelompok Lengkap (RAKL) digunakan bila terdapat dua arah sumber keragaman lingkungan yang perlu dikendalikan.",
     "o": [
       "False",
       "True"
@@ -11426,7 +11426,7 @@
   {
     "q": "Seorang peneliti ingin menguji tiga varietas jagung di lahan yang memiliki keragaman kesuburan tanah yang signifikan dari satu sisi ke sisi lain lahan. Rancangan percobaan mana yang paling tepat digunakan?",
     "o": [
-      "Rancangan Acak Kelompok Lintang (RAKL)",
+      "Rancangan Acak Kelompok Lengkap (RAKL)",
       "Rancangan Acak Lengkap (RAL)",
       "Rancangan Acak Blok (RAB)",
       "Rancangan Bujur Sangkar Latin (RBSL)"
@@ -11498,7 +11498,7 @@
     "o": [
       "Rancangan Kelompok Acak (RKA)",
       "Rancangan Bujur Sangkar Latin (RBSL)",
-      "Rancangan Acak Kelompok Lintang (RAKL)",
+      "Rancangan Acak Kelompok Lengkap (RAKL)",
       "Rancangan Acak Lengkap (RAL)"
     ],
     "a": 2,
@@ -11628,7 +11628,7 @@
     "id": 869
   },
   {
-    "q": "Rancangan Acak Kelompok Lintang (RAKL) digunakan untuk mengendali dua sumber keragaman lingkungan yang berbeda, misalnya baris dan lajur.",
+    "q": "Rancangan Acak Kelompok Lengkap (RAKL) digunakan untuk mengendali dua sumber keragaman lingkungan yang berbeda, misalnya baris dan lajur.",
     "o": [
       "False",
       "True"
@@ -11832,7 +11832,7 @@
     "o": [
       "Rancangan Acak Berblok (RAB)",
       "Rancangan Acak Lengkap (RAL)",
-      "Rancangan Acak Kelompok Lintang (RAKL)",
+      "Rancangan Acak Kelompok Lengkap (RAKL)",
       "Rancangan Bujur Sangkar Latin (RBSL)"
     ],
     "a": 1,
@@ -11872,7 +11872,7 @@
   {
     "q": "Sebuah percobaan dilakukan untuk menguji empat varietas padi (V1, V2, V3, V4) di lahan yang memiliki keragaman kesuburan tanah yang signifikan di sepanjang baris. Rancangan percobaan yang paling efektif untuk mengendali sumber keragaman ini adalah...",
     "o": [
-      "Rancangan Acak Kelompok Lintang (RAKL)",
+      "Rancangan Acak Kelompok Lengkap (RAKL)",
       "Rancangan Acak Berblok (RAB)",
       "Rancangan Bujur Sangkar Latin (RBSL)",
       "Rancangan Acak Lengkap (RAL)"
@@ -12477,7 +12477,7 @@
       "False",
       "True"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Hal ini sesuai dengan definisi perancangan percobaan yang tercantum dalam materi.",
     "topic": "Perancangan Percobaan - Definisi dan Komponen",
     "source": "STA2111-Kuliah-06.pdf",
@@ -13652,7 +13652,7 @@
       "False",
       "True"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Pernyataan tersebut sesuai dengan definisi dasar Rancangan Acak Lengkap (RAL) pada unit percobaan yang homogen."
   },
   {
