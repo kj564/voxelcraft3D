@@ -138,10 +138,10 @@
   {
     "q": "Dalam konteks Big Data, 'Variety' mengacu pada kecepatan data yang berubah dan memerlukan analisis real time.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "'Variety' dalam Big Data mengacu pada banyaknya jenis data (text, gambar, suara), bukan kecepatan perubahan data yang lebih tepat dikaitkan dengan 'Velocity'.",
     "topic": "Konsep Dasar Statistika - Big Data",
     "source": "STA2111-Kuliah-01.pdf",
@@ -162,10 +162,10 @@
   {
     "q": "Statistika deskriptif bertujuan untuk membuat kesimpulan tentang populasi berdasarkan data dari sampel.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Kegiatan tersebut merupakan ciri dari statistika inferensia. Statistika deskriptif hanya menggambarkan atau meringkas data yang telah dikumpulkan.",
     "topic": "Konsep Dasar Statistika - Jenis Statistika",
     "source": "STA2111-Kuliah-01.pdf",
@@ -174,10 +174,10 @@
   {
     "q": "Seorang peneliti ingin mengetahui rata-rata tinggi badan seluruh mahasiswa IPB. Untuk itu, ia mengukur tinggi badan 100 mahasiswa sebagai wakilnya. Dalam hal ini, 100 mahasiswa tersebut merupakan populasi.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "100 mahasiswa yang diukur merupakan sebuah sampel, yaitu sebagian kecil dari populasi (seluruh mahasiswa IPB) yang digunakan untuk menarik kesimpulan.",
     "topic": "Konsep Dasar Statistika - Populasi dan Sampel",
     "source": "STA2111-Kuliah-01.pdf",
@@ -298,8 +298,8 @@
   {
     "q": "Statistika memiliki peran utama untuk mengubah data menjadi informasi guna mendukung pengambilan keputusan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
     "a": 0,
     "e": "Hal ini sesuai dengan poin penting yang disampaikan bahwa data perlu diolah dengan kaidah statistika yang benar untuk menjadi informasi yang bermanfaat.",
@@ -310,10 +310,10 @@
   {
     "q": "Dalam konteks Big Data, 'Velocity' mengacu pada berbagai jenis data yang ada, seperti teks, gambar, dan suara.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "'Velocity' dalam Big Data mengacu pada kecepatan data yang berubah dan memerlukan analisis real time. Berbagai jenis data mengacu pada 'Variety'.",
     "topic": "Konsep Dasar Statistika - Big Data",
     "source": "STA2111-Kuliah-01.pdf",
@@ -322,10 +322,10 @@
   {
     "q": "Tujuan utama statistika dalam menghadapi masalah kehidupan adalah mengubah data menjadi informasi untuk pengambilan keputusan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Salah satu poin penting kuliah adalah bahwa statistika mengubah data menjadi informasi yang bermanfaat untuk pengambilan keputusan dalam menghadapi masalah.",
     "topic": "Konsep Dasar Statistika - Apa dan Mengapa Statistika",
     "source": "STA2111-Kuliah-01.pdf",
@@ -528,10 +528,10 @@
   {
     "q": "Tujuan utama statistika dalam menghadapi masalah kehidupan adalah mengumpulkan sebanyak mungkin data.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Tujuan utama statistika bukan sekadar mengumpulkan data, tetapi mengolahnya menjadi informasi yang bermanfaat untuk pengambilan keputusan.",
     "topic": "Konsep Dasar Statistika - Apa dan Mengapa Statistika",
     "source": "STA2111-Kuliah-01.pdf",
@@ -636,10 +636,10 @@
   {
     "q": "Tujuan utama statistika adalah mengubah data menjadi informasi untuk pengambilan keputusan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Mengubah data menjadi informasi untuk pengambilan keputusan adalah tujuan utama statistika, seperti yang disebutkan dalam materi kuliah.",
     "topic": "Konsep Dasar Statistika - Apa dan Mengapa Statistika",
     "source": "STA2111-Kuliah-01.pdf",
@@ -648,10 +648,10 @@
   {
     "q": "Dalam konteks Big Data, istilah 'Velocity' mengacu pada berbagai jenis data seperti teks, gambar, dan suara.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Dalam Big Data, 'Variety' mengacu pada berbagai jenis data, sedangkan 'Velocity' mengacu pada kecepatan data berubah dan membutuhkan analisis real-time.",
     "topic": "Konsep Dasar Statistika - Big Data",
     "source": "STA2111-Kuliah-01.pdf",
@@ -850,10 +850,10 @@
   {
     "q": "Data yang dihasilkan dari aktivitas jalan kaki (seperti Google Maps) tergolong data mechanistic karena dibangkitkan dengan memberi perlakuan terhadap objek.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Data dari aktivitas jalan kaki adalah contoh data natural/digital yang terekam secara otomatis, bukan data yang dihasilkan dari percobaan dengan memberi perlakuan.",
     "topic": "Konsep Dasar Statistika - Cara Memperoleh Data",
     "source": "STA2111-Kuliah-01.pdf",
@@ -862,10 +862,10 @@
   {
     "q": "Volume, Variety, dan Velocity adalah tiga karakteristik utama yang mendefinisikan Big Data.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Materi menjelaskan Big Data memiliki tiga karakteristik utama: Volume (ukuran besar), Variety (banyak jenis), dan Velocity (berubah cepat).",
     "topic": "Konsep Dasar Statistika - Big Data",
     "source": "STA2111-Kuliah-01.pdf",
@@ -886,10 +886,10 @@
   {
     "q": "Menurut materi kuliah, statistika dapat diaplikasikan dalam bidang politik untuk menghasilkan kebijakan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Slide 'Penerapan Statistika' menampilkan bidang ekonomi, bisnis, politik, dan iklim sebagai contoh bidang yang menerapkan statistika untuk menghasilkan kebijakan dan solusi.",
     "topic": "Konsep Dasar Statistika - Penerapan Statistika",
     "source": "STA2111-Kuliah-01.pdf",
@@ -898,10 +898,10 @@
   {
     "q": "Statistika deskriptif digunakan untuk membuat kesimpulan tentang populasi berdasarkan data sampel.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Statistika inferensia, bukan deskriptif, yang digunakan untuk membuat kesimpulan tentang populasi berdasarkan data sampel.",
     "topic": "Konsep Dasar Statistika - Statistika Deskriptif dan Inferensia",
     "source": "STA2111-Kuliah-01.pdf",
@@ -1020,8 +1020,8 @@
   {
     "q": "Statistika didefinisikan sebagai alat untuk mengubah data menjadi informasi yang bermanfaat dalam pengambilan keputusan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
     "a": 0,
     "e": "Hal ini sesuai dengan poin penting di materi yang menyatakan bahwa data diolah dengan kaidah statistika yang benar untuk menghasilkan informasi yang bermanfaat.",
@@ -1044,8 +1044,8 @@
   {
     "q": "Statistika didefinisikan sebagai proses mengubah data menjadi informasi untuk pengambilan keputusan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
     "a": 0,
     "e": "Hal ini sesuai dengan definisi yang tercantum dalam slide 'Apa dan Mengapa Statistika' yang menyatakan statistika mengubah data menjadi informasi untuk pengambilan keputusan.",
@@ -1068,10 +1068,10 @@
   {
     "q": "Kebijakan yang tepat sasaran dalam suatu negara akan dihasilkan dari analisis data yang benar.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Slide 'Pemanfaatan Data dalam Kehidupan' menyatakan bahwa 'Kebijakan tepat sasaran jika berbasis data yang benar' dan 'Data yang benar → analisis yang tepat → kebijakan yang tepat sasaran'.",
     "topic": "Konsep Dasar Statistika - Penerapan Statistika",
     "source": "STA2111-Kuliah-01.pdf",
@@ -1080,10 +1080,10 @@
   {
     "q": "Data hasil pencatatan administrasi suatu institusi, seperti data transaksi perbankan, tergolong data mechanistic.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Slide 'Cara Memperoleh Data' menyebutkan bahwa data dari hasil pencatatan administrasi institusi (misal data transaksi perbankan) tergolong data mechanistik.",
     "topic": "Konsep Dasar Statistika - Jenis Data",
     "source": "STA2111-Kuliah-01.pdf",
@@ -1092,10 +1092,10 @@
   {
     "q": "Menurut materi kuliah, statistika deskriptif digunakan untuk membuat kesimpulan tentang populasi berdasarkan data sampel.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Membuat kesimpulan tentang populasi berdasarkan data sampel adalah ciri dari statistika inferensia, bukan statistika deskriptif yang hanya menggambarkan karakteristik data yang ada.",
     "topic": "Konsep Dasar Statistika - Statistika Deskriptif dan Inferensia",
     "source": "STA2111-Kuliah-01.pdf",
@@ -1290,10 +1290,10 @@
   {
     "q": "Karakteristik 'Velocity' pada Big Data mengacu pada ukuran data yang sangat besar.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Karakteristik 'Velocity' mengacu pada kecepatan data berubah dan memerlukan analisis real-time, sedangkan 'Volume' mengacu pada ukuran data yang besar.",
     "topic": "Konsep Dasar Statistika - Big Data",
     "source": "STA2111-Kuliah-01.pdf",
@@ -1314,10 +1314,10 @@
   {
     "q": "Karakteristik 'Variety' pada Big Data mengacu pada kebutuhan analisis data secara real-time karena datanya berubah cepat.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "'Variety' mengacu pada banyaknya jenis data (teks, gambar, suara), sedangkan 'Velocity' yang mengacu pada kecepatan perubahan data dan kebutuhan analisis real-time.",
     "topic": "Konsep Dasar Statistika - Big Data",
     "source": "STA2111-Kuliah-01.pdf",
@@ -1576,10 +1576,10 @@
   {
     "q": "Statistika berfungsi mengubah data menjadi informasi untuk pengambilan keputusan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Mengubah data menjadi informasi untuk pengambilan keputusan adalah definisi utama statistika yang disampaikan dalam materi.",
     "topic": "Konsep Dasar Statistika - Apa dan Mengapa Statistika",
     "source": "STA2111-Kuliah-01.pdf",
@@ -1588,10 +1588,10 @@
   {
     "q": "Karakteristik 'Variety' pada Big Data mengacu pada ukuran data yang sangat besar.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Karakteristik 'Variety' mengacu pada banyaknya jenis data (text, gambar, suara), sedangkan 'Volume' mengacu pada ukuran data yang besar.",
     "topic": "Konsep Dasar Statistika - Big Data",
     "source": "STA2111-Kuliah-01.pdf",
@@ -1600,10 +1600,10 @@
   {
     "q": "Tujuan utama dari statistika adalah untuk mengumpulkan data sebanyak mungkin dari berbagai sumber.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Tujuan utama statistika bukan hanya mengumpulkan data, tetapi mengolahnya menjadi informasi yang bermanfaat untuk pengambilan keputusan.",
     "topic": "Konsep Dasar Statistika - Apa dan Mengapa Statistika",
     "source": "STA2111-Kuliah-01.pdf",
@@ -1612,10 +1612,10 @@
   {
     "q": "Dalam konteks Big Data, karakteristik 'Velocity' mengacu pada kecepatan data berubah dan memerlukan analisis real-time.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Materi menjelaskan bahwa 'Velocity' adalah karakteristik Big Data yang berhubungan dengan kecepatan data berubah dan perlunya analisis real-time.",
     "topic": "Konsep Dasar Statistika - Big Data",
     "source": "STA2111-Kuliah-01.pdf",
@@ -1624,10 +1624,10 @@
   {
     "q": "Statistika dapat diaplikasikan dalam bidang politik untuk menghasilkan prediksi hasil pemilihan umum yang akurat.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Materi menampilkan contoh penerapan statistika di bidang politik, yang salah satunya adalah untuk prediksi hasil pemilihan umum.",
     "topic": "Konsep Dasar Statistika - Penerapan Statistika",
     "source": "STA2111-Kuliah-01.pdf",
@@ -2070,10 +2070,10 @@
   {
     "q": "Penyajian data dalam bentuk mentah (raw data) biasanya sudah cukup mudah digunakan untuk pengambilan keputusan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "PDF menyatakan bahwa data dalam bentuk mentah biasanya tidak mudah digunakan dan perlu disajikan dalam bentuk tabel atau grafik terlebih dahulu.",
     "topic": "Penyajian Data - Konsep Umum",
     "source": "STA2111-Kuliah-02.pdf",
@@ -2306,10 +2306,10 @@
   {
     "q": "Skala pengukuran rasio memiliki nol mutlak, sehingga memungkinkan perbandingan rasio antar nilai.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Skala rasio memiliki karakteristik nol mutlak, yang berarti nol menunjukkan tidak adanya nilai, sehingga perbandingan seperti 'dua kali lipat' adalah valid.",
     "topic": "Penyajian Data - Tipe Data & Skala Pengukuran",
     "source": "STA2111-Kuliah-02.pdf",
@@ -2354,10 +2354,10 @@
   {
     "q": "Dalam hierarki skala pengukuran, skala interval memungkinkan perbandingan rasio antar nilai (misalnya, nilai A dua kali nilai B).",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Pada skala interval, tidak ada nol mutlak, sehingga pernyataan seperti 'dua kali lipat' tidak berlaku. Perbandingan rasio hanya valid pada skala rasio.",
     "topic": "Penyajian Data - Tipe Data & Skala Pengukuran",
     "source": "STA2111-Kuliah-02.pdf",
@@ -2366,10 +2366,10 @@
   {
     "q": "Skala pengukuran rasio memungkinkan perbandingan rasio antar nilai karena memiliki nol mutlak.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Pernyataan benar karena definisi skala rasio dalam PDF menyatakan bahwa skala ini memiliki nol mutlak dan memungkinkan perbandingan rasio.",
     "topic": "Penyajian Data - Skala Pengukuran",
     "source": "STA2111-Kuliah-02.pdf",
@@ -2378,8 +2378,8 @@
   {
     "q": "Diagram lingkaran (pie chart) adalah pilihan yang paling tepat untuk menyajikan data numerik kontinu.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
     "a": 1,
     "e": "Pernyataan salah karena pie chart digunakan untuk data kategorik, sedangkan data numerik kontinu sebaiknya disajikan dengan histogram.",
@@ -2390,8 +2390,8 @@
   {
     "q": "Data tingkat pendidikan responden (SD, SMP, SMA, S1) merupakan contoh data kategorik dengan skala pengukuran nominal.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
     "a": 1,
     "e": "Pernyataan salah karena tingkat pendidikan memiliki urutan atau peringkat, sehingga skalanya adalah ordinal, bukan nominal.",
@@ -2414,8 +2414,8 @@
   {
     "q": "Dalam konteks membuat histogram di Microsoft Excel, 'Bin Range' mengacu pada rentang nilai data mentah yang akan dianalisis.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
     "a": 1,
     "e": "Pernyataan salah karena 'Bin Range' dalam Excel mengacu pada rentang batas (kelompok) kelas untuk mengelompokkan data, bukan data mentah itu sendiri.",
@@ -2664,10 +2664,10 @@
   {
     "q": "Skala pengukuran data numerik kontinu selalu memiliki nol mutlak.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Data numerik kontinu bisa menggunakan skala interval (tanpa nol mutlak) atau rasio (dengan nol mutlak).",
     "topic": "Penyajian Data - Tipe Data",
     "source": "STA2111-Kuliah-02.pdf",
@@ -2862,10 +2862,10 @@
   {
     "q": "Tabel distribusi frekuensi adalah bentuk penyajian data yang paling efektif untuk merangkum data kategorik dan menampilkan frekuensi atau persentasenya.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Tabel distribusi frekuensi adalah bentuk penyajian yang dirancang khusus untuk menampilkan frekuensi atau persentase dari setiap kategori data.",
     "topic": "Penyajian Data - Tabel Distribusi Frekuensi",
     "source": "STA2111-Kuliah-02.pdf",
@@ -2874,10 +2874,10 @@
   {
     "q": "Data dalam bentuk mentah (raw data) biasanya mudah digunakan langsung untuk pengambilan keputusan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Slide Penyajian Data menyatakan bahwa data dalam bentuk mentah biasanya tidak mudah digunakan, sehingga perlu disajikan terlebih dahulu dalam bentuk tabel atau grafik.",
     "topic": "Penyajian Data - Pengantar",
     "source": "STA2111-Kuliah-02.pdf",
@@ -3120,10 +3120,10 @@
   {
     "q": "Bentuk grafik yang paling tepat untuk menampilkan hubungan atau interaksi antara dua peubah kategorik adalah diagram batang (bar chart) yang dikelompokkan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Diagram batang yang dikelompokkan cocok untuk membandingkan distribusi dua peubah kategorik, namun bentuk yang paling tepat untuk menampilkan hubungan atau interaksi antara dua peubah kategorik adalah tabel silang (cross table).",
     "topic": "Penyajian Data - Grafik Dua Peubah",
     "source": "STA2111-Kuliah-02.pdf",
@@ -3216,10 +3216,10 @@
   {
     "q": "Diagram Pareto adalah kombinasi dari bar chart dan garis, di mana bar chart menampilkan frekuensi kategori dan garis menampilkan frekuensi kumulatif, dengan tujuan untuk mengidentifikasi sebab utama masalah.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Diagram Pareto memang menggabungkan bar chart dan garis frekuensi kumulatif, namun tujuannya adalah untuk mengidentifikasi 'vital few' atau kategori yang paling signifikan berdasarkan frekuensi.",
     "topic": "Penyajian Data - Diagram Pareto",
     "source": "STA2111-Kuliah-02.pdf",
@@ -3240,10 +3240,10 @@
   {
     "q": "Data tingkat pendidikan (SD, SMP, SMA, S1, S2, S3) yang dianggap sebagai kategori berurutan, sebaiknya disajikan menggunakan diagram lingkaran (pie chart) untuk menunjukkan proporsi setiap tingkat.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Data ordinal memiliki urutan, sehingga lebih tepat disajikan dengan bar chart atau diagram batang untuk menyoroti peringkat atau urutan tersebut, bukan pie chart yang tidak menunjukkan urutan.",
     "topic": "Penyajian Data - Grafik untuk Data Ordinal",
     "source": "STA2111-Kuliah-02.pdf",
@@ -3252,10 +3252,10 @@
   {
     "q": "Tujuan utama dari penyajian data adalah untuk mengubah data mentah (raw data) yang sulit dipahami menjadi bentuk yang lebih terstruktur seperti tabel atau grafik guna memudahkan pengambilan keputusan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Data mentah biasanya tidak mudah digunakan untuk pengambilan keputusan, sehingga penyajian data menjadi langkah penting untuk meringkas dan mempresentasikan informasi secara efektif.",
     "topic": "Penyajian Data - Tujuan Penyajian",
     "source": "STA2111-Kuliah-02.pdf",
@@ -3288,10 +3288,10 @@
   {
     "q": "Bar chart lebih efektif daripada pie chart untuk membandingkan frekuensi antar kategori yang memiliki banyak label, karena pie chart menjadi sulit dibaca saat terlalu banyak potongan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Bar chart memungkinkan perbandingan langsung tinggi batang antar kategori, sedangkan pie chart dengan banyak kategori menjadi kacau dan sulit untuk membandingkan proporsi secara akurat.",
     "topic": "Penyajian Data - Bar Chart vs Pie Chart",
     "source": "STA2111-Kuliah-02.pdf",
@@ -3300,10 +3300,10 @@
   {
     "q": "Skala pengukuran Interval memiliki jarak antar pengukuran yang bermakna, tetapi tidak memiliki titik nol mutlak.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Skala Interval memiliki jarak yang bermakna, tetapi titik nolnya bersifat arbitrary atau bukan nol mutlak.",
     "topic": "Penyajian Data - Skala Pengukuran",
     "source": "STA2111-Kuliah-02.pdf",
@@ -4298,10 +4298,10 @@
   {
     "q": "Median merupakan ukuran pemusatan data yang tidak dipengaruhi oleh nilai ekstrim (outlier).",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Median adalah nilai tengah data yang sudah diurutkan, sehingga keberadaan nilai ekstrim tidak memengaruhi nilainya.",
     "topic": "Peringkasan Data - Median",
     "source": "STA2111-Kuliah-03.pdf",
@@ -4334,10 +4334,10 @@
   {
     "q": "Rata-rata aritmetika (mean) dianggap sebagai ukuran pemusatan yang paling umum karena menggunakan semua nilai data dalam perhitungannya.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Rata-rata aritmetika memanfaatkan setiap nilai amatan untuk menghitung pusat massa data, sehingga menjadi ukuran yang umum digunakan.",
     "topic": "Peringkasan Data - Rata-rata Aritmetika",
     "source": "STA2111-Kuliah-03.pdf",
@@ -4358,10 +4358,10 @@
   {
     "q": "Ragam (varians) dihitung dengan mengkuadratkan selisih setiap nilai data dari rata-rata, sehingga memberikan bobot yang lebih besar pada nilai yang jauh dari pusat.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Proses pengkuadratan pada perhitungan ragam memberikan bobot yang lebih besar pada pencilan, sehingga sangat dipengaruhi oleh nilai ekstrim.",
     "topic": "Peringkasan Data - Ragam",
     "source": "STA2111-Kuliah-03.pdf",
@@ -4382,10 +4382,10 @@
   {
     "q": "Mode adalah satu-satunya ukuran pemusatan data yang dapat digunakan untuk data yang bersifat kualitatif.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Mode adalah nilai yang paling sering muncul dan dapat diterapkan pada data kualitatif, tetapi bukan satu-satukanya; median dan mean tidak dapat digunakan untuk data kualitatif.",
     "topic": "Peringkasan Data - Mode",
     "source": "STA2111-Kuliah-03.pdf",
@@ -4618,8 +4618,8 @@
   {
     "q": "Rata-rata aritmetika dianggap sebagai ukuran pemusatan yang paling umum karena mempertimbangkan setiap nilai dalam data dan menunjukkan pusat massa dari peubah numerik.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
     "a": 0,
     "e": "Benar, sesuai dengan definisi dalam PDF, rata-rata aritmetika adalah ukuran pemusatan yang paling umum karena merupakan ukuran yang menimbang pusat massa dari suatu peubah numerik.",
@@ -4630,10 +4630,10 @@
   {
     "q": "Nilai kovarians (Covariance) positif antara dua peubah menunjukkan bahwa kedua peubah cenderung bergerak ke arah yang berlawanan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Salah, kovarians positif menunjukkan hubungan linier di mana kedua peubah cenderung bergerak ke arah yang sama.",
     "topic": "Peringkasan Data - Ukuran Penyebaran",
     "source": "STA2111-Kuliah-03.pdf",
@@ -4690,8 +4690,8 @@
   {
     "q": "Aturan Empirikal (Empirical Rule) menyatakan bahwa dalam distribusi normal, sekitar 95% data terletak dalam rentang dua simpangan baku dari rata-rata.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
     "a": 0,
     "e": "Benar, sesuai dengan aturan empirikal yang dijelaskan dalam PDF, 95% data terletak dalam interval ±2σ dari μ.",
@@ -4702,10 +4702,10 @@
   {
     "q": "Rata-rata aritmetika selalu merupakan ukuran pemusatan data yang paling representatif, terlepas dari adanya nilai ekstrim dalam dataset.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Rata-rata aritmetika sangat sensitif terhadap nilai ekstrim (outlier), sehingga dapat menyebabkan representasi pusat data yang tidak tepat jika pencilan ada.",
     "topic": "Peringkasan Data - Ukuran Pemusatan",
     "source": "STA2111-Kuliah-03.pdf",
@@ -4762,10 +4762,10 @@
   {
     "q": "Median adalah ukuran pemusatan data yang satu-satunya yang dapat digunakan untuk data bersifat kualitatif ordinal.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Mode adalah satu-satunya ukuran pemusatan data yang dapat digunakan untuk data kualitatif ordinal, karena tidak memerlukan pengurutan nilai.",
     "topic": "Peringkasan Data - Ukuran Pemusatan",
     "source": "STA2111-Kuliah-03.pdf",
@@ -5240,11 +5240,11 @@
   {
     "q": "Rata-rata terboboti (Weighted Mean) digunakan ketika setiap pengamatan memiliki tingkat kepentingan atau bobot yang berbeda dalam perhitungan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
     "a": 0,
-    "e": "Rata-rata terboboti digunakan memberikan bobot yang berbeda pada setiap nilai pengamatan sesuai dengan tingkat kepentingannya.",
+    "e": "Rata-rata terboboti (Weighted Mean) memang digunakan ketika setiap pengamatan memiliki tingkat kepentingan atau bobot yang berbeda.",
     "topic": "Peringkasan Data - Mean Terboboti",
     "source": "STA2111-Kuliah-03.pdf",
     "id": 391
@@ -5252,10 +5252,10 @@
   {
     "q": "Modus adalah satu-satunya ukuran pemusatan data yang dapat digunakan untuk data kualitatif.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Modus dapat digunakan untuk data kualitatif, tetapi mean dan median umumnya tidak, sehingga pernyataan bahwa itu adalah satu-satunya adalah salah.",
     "topic": "Peringkasan Data - Mode",
     "source": "STA2111-Kuliah-03.pdf",
@@ -5264,10 +5264,10 @@
   {
     "q": "Rentang (Range) merupakan ukuran penyebaran data yang dihitung dengan mengurangkan nilai minimum dari nilai maksimum.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Rentang didefinisikan sebagai selisih antara nilai maksimum dan nilai minimum dalam suatu kumpulan data.",
     "topic": "Peringkasan Data - Rentang",
     "source": "STA2111-Kuliah-03.pdf",
@@ -5610,10 +5610,10 @@
   {
     "q": "Rata-rata aritmetika adalah ukuran pemusatan data yang paling umum digunakan karena tidak dipengaruhi oleh nilai ekstrim (outlier).",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Rata-rata aritmetika sangat dipengaruhi oleh nilai ekstrem, seperti yang diilustrasikan dalam slide, di mana adanya pencilan mengubah nilai rata-rata secara signifikan.",
     "topic": "Peringkasan Data - Mean",
     "source": "STA2111-Kuliah-03.pdf",
@@ -5622,10 +5622,10 @@
   {
     "q": "Kovarians (Covariance) mengukur kekuatan hubungan linier antara dua peubah dan dapat menunjukkan arah hubungan tersebut.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Kovarians mengukur kekuatan dan arah hubungan linier; kovarians positif menunjukkan hubungan searah, negatif menunjukkan hubungan berlawanan arah.",
     "topic": "Peringkasan Data - Kovarians",
     "source": "STA2111-Kuliah-03.pdf",
@@ -5646,10 +5646,10 @@
   {
     "q": "Menurut Aturan Empirikal (Empirical Rule) untuk distribusi normal, sekitar 95% data terletak dalam rentang dua simpangan baku dari rata-rata.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Aturan Empirikal menyatakan bahwa sekitar 95% data terletak dalam rentang dua simpangan baku dari rata-rata.",
     "topic": "Peringkasan Data - Aturan Empirikal",
     "source": "STA2111-Kuliah-03.pdf",
@@ -5658,10 +5658,10 @@
   {
     "q": "Varians (Variance) dan Simpangan Baku (Standard Deviation) adalah ukuran penyebaran data yang hanya menggunakan nilai-nilai di dekat rata-rata dalam perhitungannya.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Varians dan simpangan baku menggunakan SEMUA nilai data dalam perhitungannya, di mana nilai yang jauh dari rata-rata diberikan bobot yang lebih besar karena selisihnya dikuadratkan.",
     "topic": "Peringkasan Data - Varians dan Simpangan Baku",
     "source": "STA2111-Kuliah-03.pdf",
@@ -5824,10 +5824,10 @@
   {
     "q": "Koefisien variasi (Coefficient of Variation) memungkinkan perbandingan variabilitas antara dua dataset yang memiliki satuan pengukuran berbeda.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Koefisien variasi dihitung sebagai persentase, sehingga merupakan ukuran variabilitas relatif yang tidak bergantung pada satuan pengukuran.",
     "topic": "Peringkasan Data - Koefisien Variasi",
     "source": "STA2111-Kuliah-03.pdf",
@@ -5860,10 +5860,10 @@
   {
     "q": "Menurut Aturan Empiris, sekitar 99.7% data dalam distribusi normal terletak dalam rentang tiga simpangan baku dari rata-rata.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Aturan Empiris menyatakan bahwa sekitar 99.7% data terletak dalam rentang ±3 simpangan baku dari rata-rata.",
     "topic": "Peringkasan Data - Aturan Empiris",
     "source": "STA2111-Kuliah-03.pdf",
@@ -5896,10 +5896,10 @@
   {
     "q": "Modus adalah nilai yang paling sering muncul dalam suatu set data dan selalu ada dalam setiap dataset.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Modus mungkin tidak ada (jika semua nilai frekuensinya sama) atau ada lebih dari satu (jika ada beberapa nilai dengan frekuensi tertinggi yang sama).",
     "topic": "Peringkasan Data - Modus",
     "source": "STA2111-Kuliah-03.pdf",
@@ -5920,10 +5920,10 @@
   {
     "q": "Untuk data berkelompok, perhitungan mean (rata-rata) dapat dilakukan dengan mengalikan nilai tengah setiap kelas dengan frekuensinya kemudian menjumlahkannya.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Perhitungan mean untuk data berkelompok memerlukan pembagian total hasil kali nilai tengah dan frekuensi dengan total frekuensi.",
     "topic": "Peringkasan Data - Mean Data Berkelompok",
     "source": "STA2111-Kuliah-03.pdf",
@@ -6188,10 +6188,10 @@
   {
     "q": "Ragam (varians) populasi dihitung dengan rumus σ² = Σ(x-μ)²/N, di mana penyebutnya adalah N karena merupakan ukuran parameter untuk seluruh populasi.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Benar, ragam populasi menggunakan N sebagai penyebut karena menghitung deviasi dari rata-rata populasi (μ) untuk seluruh anggota populasi.",
     "topic": "Peringkasan Data - Ragam Populasi",
     "source": "STA2111-Kuliah-03.pdf",
@@ -6200,10 +6200,10 @@
   {
     "q": "Nilai ragam (varians) sampel dihitung dengan penyebut (n-1) untuk mendapatkan penduga yang tidak bias (unbiased penduga) dari ragam populasi.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Benar, penggunaan (n-1) sebagai derajat kebebasan menghasilkan varians sampel yang menjadi penduga yang tidak bias untuk ragam populasi.",
     "topic": "Peringkasan Data - Ragam Sampel",
     "source": "STA2111-Kuliah-03.pdf",
@@ -6698,10 +6698,10 @@
   {
     "q": "Tujuan utama dari Eksplorasi Data adalah untuk menguji hipotesis statistik yang telah ditetapkan sebelumnya.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Tujuan EDA adalah untuk memahami karakteristik data secara mendalam sebelum analisis yang lebih formal, bukan untuk menguji hipotesis.",
     "topic": "Eksplorasi Data - Tujuan",
     "source": "STA2111-Kuliah-04.pdf",
@@ -6710,10 +6710,10 @@
   {
     "q": "Boxplot dapat digunakan untuk melihat adanya pencilan (outliers) dalam sebuah dataset.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Salah satu fungsi utama Boxplot adalah mengidentifikasi pencilan dengan menggunakan konsep jangkuan antarkuartil (IQR).",
     "topic": "Eksplorasi Data - Boxplot",
     "source": "STA2111-Kuliah-04.pdf",
@@ -6746,10 +6746,10 @@
   {
     "q": "Berdasarkan studi memory recall times, waktu untuk mengingat memori yang tidak menyenangkan (unpleasant) secara umum lebih lama daripada yang menyenangkan (pleasant).",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Dari data yang diberikan, nilai-nilai untuk 'unpleasant memory' secara konsisten lebih tinggi daripada 'pleasant memory', menunjukkan waktu recall yang lebih lama.",
     "topic": "Eksplorasi Data - Perbandingan Grup",
     "source": "STA2111-Kuliah-04.pdf",
@@ -6758,10 +6758,10 @@
   {
     "q": "Sebuah scatter plot selalu menunjukkan adanya hubungan linier yang kuat antara dua peubah yang dianalisis.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Scatter plot digunakan untuk mengeksplorasi hubungan, yang bisa linier, non-linier, atau bahkan tidak ada hubungan sama sekali.",
     "topic": "Eksplorasi Data - Hubungan Antar Peubah",
     "source": "STA2111-Kuliah-04.pdf",
@@ -6770,10 +6770,10 @@
   {
     "q": "Filosofi utama John Tukey di balik pengembangan EDA adalah bahwa statistik harus bermain di halaman belakang (everyone's backyard) untuk mempelajari data dengan cara yang sederhana.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "kutipan langsung dari PDF menggambarkan filosofi Tukey bahwa statistik harus dapat memeriksa dan belajar dari data dengan pendekatan yang lebih sederhana.",
     "topic": "Eksplorasi Data - Filosofi",
     "source": "STA2111-Kuliah-04.pdf",
@@ -6890,10 +6890,10 @@
   {
     "q": "Berdasarkan studi memory recall times yang disajikan dalam PDF, boxplot menunjukkan bahwa sebaran waktu untuk mengingat memori yang tidak menyenangkan (unpleasant) lebih tersebar dan memiliki median yang lebih tinggi dibandingkan memori yang menyenangkan (pleasant).",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Berdasarkan data dan boxplot, median waktu recall untuk unpleasant memory lebih tinggi dan kotaknya lebih panjang, menunjukkan pemusatan dan sebaran yang lebih besar.",
     "topic": "Eksplorasi Data - Perbandingan Antar Grup",
     "source": "STA2111-Kuliah-04.pdf",
@@ -6902,10 +6902,10 @@
   {
     "q": "Scatter plot adalah grafik yang paling sesuai untuk mengeksplorasi hubungan linier antara dua peubah numerik, seperti hubungan antara income per hari dan angka kematian bayi.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Scatter plot digunakan untuk mengeksplorasi hubungan antara dua peubah numerik, seperti contoh hubungan linier positif antara income dan angka kematian bayi.",
     "topic": "Eksplorasi Data - Hubungan Antar Peubah",
     "source": "STA2111-Kuliah-04.pdf",
@@ -6914,10 +6914,10 @@
   {
     "q": "Seorang analis data ingin membandingkan sebaran nilai ujian dari dua kelas yang berbeda. Histogram adalah pilihan grafik yang paling tepat untuk membandingkan kedua distribusi tersebut secara langsung.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Untuk membandingkan sebaran dua atau lebih kelompok data, boxplot lebih efektif karena dapat menampilkan ukuran pemusatan dan penyebaran secara berdampingan.",
     "topic": "Eksplorasi Data - Perbandingan Antar Grup",
     "source": "STA2111-Kuliah-04.pdf",
@@ -6938,10 +6938,10 @@
   {
     "q": "Berdasarkan studi tentang memory recall times, waktu untuk mengingat memori yang tidak menyenangkan cenderung lebih lama dibandingkan dengan memori yang menyenangkan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Berdasarkan data yang disajikan, nilai-nilai untuk 'unpleasant memory' secara umum lebih tinggi (memakan waktu lebih lama) daripada 'pleasant memory'.",
     "topic": "Eksplorasi Data - Eksplorasi Perbandingan Antar Grup",
     "source": "STA2111-Kuliah-04.pdf",
@@ -6950,10 +6950,10 @@
   {
     "q": "Boxplot dapat digunakan sebagai alat pembandingan sebaran data antara dua kelompok atau lebih.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Salah satu kegunaan boxplot adalah untuk membandingkan sebaran dan pemusatan data secara visual antara dua kelompok data atau lebih.",
     "topic": "Eksplorasi Data - Boxplot",
     "source": "STA2111-Kuliah-04.pdf",
@@ -7222,10 +7222,10 @@
   {
     "q": "Boxplot dapat digunakan untuk membandingkan sebaran data (penyebaran dan pemusatan) antara dua kelompok atau lebih.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "PDF menjelaskan bahwa boxplot dapat digunakan sebagai alat pembandingan sebaran dua kelompok data atau lebih.",
     "topic": "Eksplorasi Data - Boxplot",
     "source": "STA2111-Kuliah-04.pdf",
@@ -7550,10 +7550,10 @@
   {
     "q": "Salah satu fungsi utama dari boxplot dalam eksplorasi data adalah untuk mengidentifikasi adanya data pencilan (outliers).",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Benar. Boxplot efektif untuk mengidentifikasi pencilan data karena menunjukkan rentang data yang wajar (whiskers) dan data di luar rentang tersebut.",
     "topic": "Eksplorasi Data - Boxplot",
     "source": "STA2111-Kuliah-04.pdf",
@@ -7574,10 +7574,10 @@
   {
     "q": "Salah satu tujuan utama dari langkah eksplorasi data sebelum analisis data yang lebih mendalam adalah untuk lebih memahami karakteristik dari data itu sendiri.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Benar. Eksplorasi data adalah langkah awal untuk memahami karakteristik data sebelum melakukan analisis yang lebih kompleks.",
     "topic": "Eksplorasi Data - Konsep Dasar",
     "source": "STA2111-Kuliah-04.pdf",
@@ -7682,10 +7682,10 @@
   {
     "q": "Berdasarkan contoh hubungan antara income per hari dan angka kematian bayi, scatter plot menunjukkan adanya hubungan linier negatif yang kuat antar kedua peubah.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Contoh tersebut menunjukkan hubungan linier positif, di mana pendapatan yang lebih tinggi berkorelasi dengan angka kematian bayi yang lebih rendah.",
     "topic": "Eksplorasi Data - Eksplorasi Hubungan Antar Peubah",
     "source": "STA2111-Kuliah-04.pdf",
@@ -7718,10 +7718,10 @@
   {
     "q": "Berdasarkan contoh studi tentang memory recall times pada PDF, boxplot menunjukkan bahwa sebaran waktu recall untuk memori unpleasant memiliki rentang yang lebih lebar dibandingkan dengan memori pleasant.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Dari data yang diberikan, nilai-nilai untuk memori unpleasant (1.45 hingga 10.93) memiliki rentang yang lebih lebar daripada memori pleasant (1.07 hingga 6.17), yang terlihat dari boxplot.",
     "topic": "Eksplorasi Data - Perbandingan Grup",
     "source": "STA2111-Kuliah-04.pdf",
@@ -7730,10 +7730,10 @@
   {
     "q": "Scatter plot adalah jenis grafik yang ideal untuk mengeksplorasi hubungan linier antara dua peubah numerik kontinu.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "PDF menyebutkan scatter plot sebagai alat untuk mengeksplorasi hubungan antar peubah, dan contohnya menunjukkan hubungan linier antara income dan kematian bayi.",
     "topic": "Eksplorasi Data - Scatter Plot",
     "source": "STA2111-Kuliah-04.pdf",
@@ -7768,10 +7768,10 @@
   {
     "q": "Tujuan utama dari eksplorasi data adalah untuk mengidentifikasi hubungan kausal antara dua atau lebih peubah.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Tujuan utama EDA adalah memahami karakteristik data, bukan untuk menetapkan hubungan kausal yang merupakan bagian dari analisis inferensial.",
     "topic": "Eksplorasi Data - Tujuan",
     "source": "STA2111-Kuliah-04.pdf",
@@ -7780,10 +7780,10 @@
   {
     "q": "Boxplot dapat digunakan untuk membandingkan sebaran data dari dua kelompok atau lebih secara visual.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "PDF menyebutkan boxplot sebagai alat pembandingan sebaran dua kelompok data atau lebih.",
     "topic": "Eksplorasi Data - Boxplot",
     "source": "STA2111-Kuliah-04.pdf",
@@ -7816,10 +7816,10 @@
   {
     "q": "John Tukey mengembangkan metode Exploratory Data Analysis (EDA) karena prihatin para statistisi terlalu menekankan pada analisis data yang kompleks.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "PDF menjelaskan bahwa Tukey prihatin statistisi mengabaikan cara sederhana untuk memeriksa dan belajar dari data, sehingga mengembangkan EDA.",
     "topic": "Eksplorasi Data - Definisi",
     "source": "STA2111-Kuliah-04.pdf",
@@ -7828,10 +7828,10 @@
   {
     "q": "Boxplot dapat digunakan untuk melihat adanya pencilan (outliers) dalam suatu kumpulan data.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Salah satu fungsi utama boxplot adalah mengidentifikasi pencilan data yang berada di luar rentang yang ditentukan oleh batang bawah dan atas.",
     "topic": "Eksplorasi Data - Boxplot",
     "source": "STA2111-Kuliah-04.pdf",
@@ -7840,10 +7840,10 @@
   {
     "q": "Scatter plot adalah jenis grafik yang ideal untuk mengeksplorasi sebaran data dari satu peubah numerik.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Scatter plot digunakan untuk mengeksplorasi hubungan antara dua peubah numerik. Sebaran satu peubah lebih cocok menggunakan histogram.",
     "topic": "Eksplorasi Data - Scatter Plot",
     "source": "STA2111-Kuliah-04.pdf",
@@ -8494,10 +8494,10 @@
   {
     "q": "Salah satu alasan utama pengambilan contoh (sampling) adalah karena sumber daya yang tersedia terbatas.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Salah satu alasan utama untuk mengambil contoh adalah sumber daya (tenaga, biaya, dan peralatan) yang tidak cukup untuk mengamati seluruh populasi.",
     "topic": "Metode Survei - Alasan Sampling",
     "source": "STA2111-Kuliah-05.pdf",
@@ -8542,10 +8542,10 @@
   {
     "q": "Kualitas kerangka contoh (sampling frame) sangat penting karena menentukan keacakan dalam penarikan contoh.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Kualitas kerangka contoh sangat penting karena kualitasnya menentukan kualitas dugaan, dan keacakan (randomness) menentukan apakah kesimpulan bisa digeneralisir.",
     "topic": "Metode Survei - Kerangka Contoh",
     "source": "STA2111-Kuliah-05.pdf",
@@ -8554,10 +8554,10 @@
   {
     "q": "Survei kepuasan pegawai yang mensyaratkan 30% sampel harus perempuan dan 70% laki-laki adalah contoh dari teknik penarikan contoh berkuota (quota sampling).",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Penarikan contoh berkuota (quota sampling) adalah teknik di mana contoh diperoleh dari kuota kelas-kelas individu yang telah ditentukan, seperti contoh yang diberikan.",
     "topic": "Metode Survei - Teknik Sampling",
     "source": "STA2111-Kuliah-05.pdf",
@@ -8816,10 +8816,10 @@
   {
     "q": "Stratified random sampling merupakan teknik penarikan contoh yang memastikan setiap strata dalam populasi memiliki perwakilan dalam sampel.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Stratified random sampling membagi populasi menjadi kelompok homogen (strata) dan mengambil sampel acak dari setiap strata untuk memastikan perwakilan.",
     "topic": "Metode Survei - Metode Penarikan Contoh",
     "source": "STA2111-Kuliah-05.pdf",
@@ -8828,10 +8828,10 @@
   {
     "q": "Dalam metode survei, instrumen seperti kamera dapat digunakan untuk mengumpulkan data berupa foto atau rekaman gambar.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Kamera disebutkan sebagai salah satu contoh instrumen pengumpulan data dalam metode survei, selain kuesioner dan pedoman wawancara.",
     "topic": "Metode Survei - Pendahuluan",
     "source": "STA2111-Kuliah-05.pdf",
@@ -8912,11 +8912,11 @@
   {
     "q": "Penarikan contoh bertujuan (purposive sampling) cocok digunakan ketika tujuan survei adalah untuk menemukan individu yang memiliki kriteria spesifik.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
     "a": 0,
-    "e": "Purposive sampling memilih responden berdasarkan kriteria tertentu yang sesuai dengan tujuan survei.",
+    "e": "Benar, penarikan contoh bertujuan (purposive sampling) memang cocok digunakan ketika tujuan survei adalah untuk menemukan individu dengan kriteria spesifik.",
     "topic": "Metode Survei - Metode Penarikan Contoh",
     "source": "STA2111-Kuliah-05.pdf",
     "id": 665
@@ -8924,10 +8924,10 @@
   {
     "q": "Metode survei selalu melibatkan interaksi langsung dengan responden untuk mengumpulkan data.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Metode survei adalah teknik pengumpulan data melalui interaksi langsung dengan responden, seperti melalui kuesioner atau wawancara.",
     "topic": "Metode Survei - Pendahuluan",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9282,10 +9282,10 @@
   {
     "q": "Metode penarikan contoh bola salju (snowball sampling) cocok digunakan ketika populasi target sulit diidentifikasi dan tidak tersedia kerangka sampling yang lengkap.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Metode ini memanfaatkan jaringan sosial responden awal untuk menemukan subjek lainnya, sangat efektif untuk populasi tersembunyi atau sulit diakses.",
     "topic": "Metode Survei - Penarikan Contoh Tidak Berpeluang",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9306,11 +9306,11 @@
   {
     "q": "Penarikan contoh bertujuan (purposive sampling) selalu menggunakan kriteria objektif dan acak dalam memilih anggota sampel.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
-    "e": "Metode ini memilih sampel berdasarkan kriteria tertentu yang sesuai dengan tujuan survei, tanpa menggunakan proses acak sehingga rentan terhadap subjektifitas peneliti.",
+    "a": 1,
+    "e": "Salah. Purposive sampling TIDAK menggunakan kriteria objektif dan acak, melainkan memilih berdasarkan kriteria tertentu yang sesuai tujuan survei.",
     "topic": "Metode Survei - Penarikan Contoh Tidak Berpeluang",
     "source": "STA2111-Kuliah-05.pdf",
     "id": 694
@@ -9318,10 +9318,10 @@
   {
     "q": "Dalam metode survei, instrumen pengumpulan data yang digunakan untuk mengamati perilaku konsumen di minimarket adalah kamera.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Kamera dapat digunakan sebagai instrumen untuk merekam atau mengamati perilaku konsumen secara langsung, seperti yang disebutkan dalam materi instrumen pengumpulan data.",
     "topic": "Metode Survei - Pendahuluan",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9330,10 +9330,10 @@
   {
     "q": "Penarikan contoh berkuota (quota sampling) menjamin setiap individu dalam populasi memiliki kesempatan yang sama terpilih sebagai sampel.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Meskipun memenuhi kuota tertentu, metode ini tidak menggunakan proses acak dalam pemilihan individu, sehingga tidak memberikan kesempatan yang sama untuk semua anggota populasi.",
     "topic": "Metode Survei - Penarikan Contoh Tidak Berpeluang",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9354,10 +9354,10 @@
   {
     "q": "Survei tentang kepuasan pegawai yang menggunakan kuota 30% perempuan dan 70% laki-laki merupakan contoh dari metode penarikan contoh berpeluang (probability sampling).",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Metode ini termasuk penarikan contoh tidak berpeluang (non-probability sampling) karena pemilihan responden didasarkan pada kuota tertentu, bukan pada kesempatan acak.",
     "topic": "Metode Survei - Penarikan Contoh Tidak Berpeluang",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9602,10 +9602,10 @@
   {
     "q": "Pengambilan contoh selalu dilakukan karena pengamatan seluruh populasi tidak mungkin dilakukan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Contoh diambil ketika pengamatan seluruh populasi tidak mungkin atau tidak efisien, bukan selalu.",
     "topic": "Metode Survei - Alasan Sampling",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9614,10 +9614,10 @@
   {
     "q": "Dalam penarikan contoh sukarela (voluntary sampling), responden dipilih secara acak dari populasi.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Penarikan contoh sukarela bergantung pada individu yang secara sukarela menjadi responden, bukan pemilihan acak.",
     "topic": "Metode Survei - Non-probability Sampling",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9706,10 +9706,10 @@
   {
     "q": "Dalam metode survei, penggunaan kamera dapat dianggap sebagai salah satu instrumen pengumpulan data.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Benar. Kamera termasuk dalam daftar instrumen pengumpulan data seperti kuesioner, pedoman wawancara, dan checklist yang disebutkan dalam materi.",
     "topic": "Metode Survei - Pendahuluan",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9718,10 +9718,10 @@
   {
     "q": "Penarikan contoh bola salju (snowball sampling) adalah teknik yang paling tepat digunakan ketika populasi target memiliki karakteristik yang mudah diidentifikasi dan tersebar merata.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Salah. Teknik ini cocok untuk populasi yang sulit diakses atau diidentifikasi, di mana responden awal memberikan referensi ke responden lain, bukan populasi yang tersebar merata.",
     "topic": "Metode Survei - Metode Penarikan Contoh",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9766,10 +9766,10 @@
   {
     "q": "Penarikan contoh (sampling) selalu dilakukan karena pengamatan seluruh populasi bersifat merusak.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Salah satu alasan pengambilan contoh adalah keterbatasan sumber daya, bukan karena pengamatan selalu merusak.",
     "topic": "Metode Survei - Alasan Sampling",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9914,10 +9914,10 @@
   {
     "q": "Penarikan contoh berkuota (quota sampling) memastikan setiap anggota populasi memiliki peluang yang sama terpilih sebagai sampel.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Metode ini memilih responden berdasarkan kuota kelas-kelas tertentu, bukan secara acak, sehingga tidak menjamin kesempatan yang sama.",
     "topic": "Metode Survei - Metode Penarikan Contoh Tidak Berpeluang",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9926,10 +9926,10 @@
   {
     "q": "Dalam metode survei, instrumen 'pedoman wawancara' digunakan sebagai alat untuk mengumpulkan data.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Pedoman wawancara adalah salah satu contoh instrumen yang digunakan dalam metode survei untuk mengumpulkan data dari responden.",
     "topic": "Metode Survei - Pendahuluan",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9962,10 +9962,10 @@
   {
     "q": "Metode pengumpulan data melalui interaksi langsung dengan responden untuk mengumpulkan informasi disebut metode survei.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Definisi survei adalah pengumpulan data melalui interaksi langsung, seperti kuesioner atau wawancara, untuk memperoleh informasi tertentu.",
     "topic": "Metode Survei - Definisi",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9974,10 +9974,10 @@
   {
     "q": "Sebelum memberikan kuesioner, peneliti dalam survei pengguna HP merek X harus memastikan responden memenuhi kriteria tertentu.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Ini adalah contoh dari penarikan contoh bertujuan (purposive sampling), di mana kriteria dipilih berdasarkan tujuan survei.",
     "topic": "Metode Survei - Purposive Sampling",
     "source": "STA2111-Kuliah-05.pdf",
@@ -9986,10 +9986,10 @@
   {
     "q": "Salah satu alasan utama pengambilan contoh (sampling) adalah karena keterbatasan sumber daya seperti tenaga, biaya, dan peralatan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Keterbatasan sumber daya adalah alasan utama mengapa pengamatan seluruh populasi tidak efisien dan pengambilan contoh diperlukan.",
     "topic": "Metode Survei - Alasan Sampling",
     "source": "STA2111-Kuliah-05.pdf",
@@ -10040,10 +10040,10 @@
   {
     "q": "Salah satu al utama pengambilan contoh (sampling) adalah karena pengamatan seluruh populasi selalu bersifat merusak.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Pengambilan contoh bisa karena keterbatasan sumber daya atau pengamatan bersifat merusak, bukan 'selalu' bersifat merusak.",
     "topic": "Metode Survei - Penarikan Contoh",
     "source": "STA2111-Kuliah-05.pdf",
@@ -10064,10 +10064,10 @@
   {
     "q": "Sebelum memberikan kuesioner kepada responden, seorang peneliti dalam survei pengguna HP merek X harus memastikan responden tersebut memang pengguna merek X tersebut.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Ini adalah contoh dari teknik purposive sampling, di mana kriteria (pengguna HP merek X) dipenuhi sebelum responden diikutsertakan dalam survei.",
     "topic": "Metode Survei - Metode Penarikan Contoh",
     "source": "STA2111-Kuliah-05.pdf",
@@ -10350,10 +10350,10 @@
   {
     "q": "Teknik pengumpulan data melalui survei selalu melibatkan interaksi langsung dengan responden, seperti wawancara atau kuesioner.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Survei adalah teknik pengumpulan data melalui interaksi langsung dengan responden, menggunakan instrumen seperti kuesioner atau pedoman wawancara.",
     "topic": "Metode Survei - Metode Survei",
     "source": "STA2111-Kuliah-05.pdf",
@@ -10374,10 +10374,10 @@
   {
     "q": "Dalam konteks metode survei, mengambil contoh dari individu yang kebetulan ditemui (accidental sampling) di minimarket dapat menghasilkan kesimpulan yang dapat digeneralisikan ke seluruh populasi konsumen.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Accidental sampling adalah teknik non-probability sampling yang tidak memastikan setiap individu memiliki kesempatan terpilih, sehingga hasilnya tidak dapat digeneralisikan.",
     "topic": "Metode Survei - Metode Penarikan Contoh",
     "source": "STA2111-Kuliah-05.pdf",
@@ -10386,10 +10386,10 @@
   {
     "q": "Metode pengumpulan data merupakan salah satu tahapan penting dalam penelitian karena cara pengumpulan data yang benar menentukan kualitas data yang akan dianalisis.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Metode pengumpulan data adalah tahapan krusial dalam penelitian karena data yang baik lahir dari cara pengumpulan yang benar dan tepat.",
     "topic": "Metode Survei - Pendahuluan",
     "source": "STA2111-Kuliah-05.pdf",
@@ -10398,10 +10398,10 @@
   {
     "q": "Dalam konteks metode survei, penarikan contoh sukarela (voluntary sampling) terjadi ketika responden dipilih berdasarkan kriteria tertentu yang sesuai dengan tujuan survei.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Penjelasan: Penarikan contoh sukarela terjadi ketika individu secara sukarela menjadi responden, sedangkan penarikan contoh bertujuan (purposive sampling) yang menggunakan kriteria tertentu.",
     "topic": "Metode Survei - Penarikan Contoh Tidak Berpeluang",
     "source": "STA2111-Kuliah-05.pdf",
@@ -10422,10 +10422,10 @@
   {
     "q": "Instrumen pengumpulan data dalam metode survei yang berupa daftar isian yang diisi oleh responden disebut pedoman wawancara.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Penjelasan: Daftar isian yang diisi responden adalah kuesioner, sedangkan pedoman wawancara adalah panduan berisi daftar pertanyaan yang harus diajukan secara lisan.",
     "topic": "Metode Survei - Pendahuluan",
     "source": "STA2111-Kuliah-05.pdf",
@@ -10434,10 +10434,10 @@
   {
     "q": "Dalam metode survei, kerangka contoh (sampling frame) menentukan kualitas dugaan karena kualitasnya memengaruhi seberapa representatif sampel terhadap populasi.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Penjelasan: PDF menyatakan bahwa 'Kualitas kerangka menentukan kualitas dugaan', menunjukkan bahwa kerangka contoh sangat penting untuk keakuratan hasil survei.",
     "topic": "Metode Survei - Penarikan Contoh",
     "source": "STA2111-Kuliah-05.pdf",
@@ -10728,7 +10728,7 @@
       "Rancangan Acak Kelompok (RAK)"
     ],
     "a": 2,
-    "e": "RAKL digunakan untuk mengendalikan dua sumber keragaman lingkungan, dalam hal ini blok baris dan blok lajur.",
+    "e": "RBSL (Rancangan Bujur Sangkar Latin) digunakan untuk mengendalikan dua sumber keragaman lingkungan, sedangkan RAKL digunakan untuk satu sumber keragaman.",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
     "id": 801
@@ -10830,10 +10830,10 @@
   {
     "q": "Pengacakan (randomization) dalam sebuah percobaan bertujuan untuk memberikan setiap unit percobaan peluang yang sama untuk menerima suatu perlakuan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "PDF menyatakan bahwa pengacakan memberi setiap unit percobaan peluang yang sama menerima suatu perlakuan.",
     "topic": "Perancangan Percobaan - Prinsip Dasar",
     "source": "STA2111-Kuliah-06.pdf",
@@ -10842,10 +10842,10 @@
   {
     "q": "Ulangan perlakuan (replication) dalam perancangan percobaan sama dengan ulangan pengukuran (repeatation).",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Soal latihan dalam PDF secara eksplisit menyatakan bahwa pernyataan ini adalah Salah (S), menunjukkan bahwa keduanya berbeda.",
     "topic": "Perancangan Percobaan - Prinsip Dasar",
     "source": "STA2111-Kuliah-06.pdf",
@@ -10854,10 +10854,10 @@
   {
     "q": "Rancangan Acak Lengkap (RAL) tepat digunakan bila kondisi lingkungan percobaan homogen.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "PDF menyatakan bahwa RAL tepat digunakan pada percobaan yang kondisi lingkungannya relatif homogen.",
     "topic": "Perancangan Percobaan - Rancangan RAL",
     "source": "STA2111-Kuliah-06.pdf",
@@ -10866,10 +10866,10 @@
   {
     "q": "Tujuan utama dari perancangan percobaan yang baik adalah untuk memperbesar keragaman respon (σ²).",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Tujuan perancangan percobaan adalah untuk memperkecil keragaman yang bukan berasal dari perlakuan agar kesimpulan akurat.",
     "topic": "Perancangan Percobaan - Tujuan",
     "source": "STA2111-Kuliah-06.pdf",
@@ -10878,10 +10878,10 @@
   {
     "q": "Pada Rancangan Bujur Sangkar Latin (RBSL), jumlah perlakuan harus sama dengan jumlah blok baris dan jumlah blok lajur.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Dalam RBSL, jumlah perlakuan (p) sama dengan jumlah baris (p) dan jumlah lajur (p), sehingga membentuk matriks bujur sangkar.",
     "topic": "Perancangan Percobaan - Rancangan RBSL",
     "source": "STA2111-Kuliah-06.pdf",
@@ -10910,7 +10910,7 @@
       "Rancangan Bujur Sangkar Latin (RBSL)"
     ],
     "a": 0,
-    "e": "RAKL digunakan untuk mengendalikan dua sumber keragaman lingkungan, misalnya baris dan lajur pada lahan, dengan menempatkan setiap perlakuan sekali dalam setiap blok.",
+    "e": "RBSL (Rancangan Bujur Sangkar Latin) digunakan untuk mengendalikan dua sumber keragaman lingkungan, misalnya baris dan lajur pada lahan. RAKL hanya untuk satu sumber.",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
     "id": 815
@@ -10980,7 +10980,7 @@
       "Rancangan Acak Lengkap (RAL)"
     ],
     "a": 2,
-    "e": "RAKL digunakan untuk mengendali dua sumber keragaman lingkungan, dalam hal ini adalah varietas padi (perlakuan) dan kesuburan tanah (blok lintang).",
+    "e": "RBSL (Rancangan Bujur Sangkar Latin) digunakan untuk mengendalikan dua sumber keragaman lingkungan. RAKL digunakan untuk satu sumber keragaman saja.",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
     "id": 820
@@ -11072,10 +11072,10 @@
   {
     "q": "Dalam konteks perancangan percobaan, data yang diperoleh merupakan respon dari objek penelitian yang telah diberikan perlakuan tertentu.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Benar, sesuai definisi dalam materi bahwa data percobaan adalah respon dari objek yang telah diberi perlakuan.",
     "topic": "Perancangan Percobaan - Definisi Dasar",
     "source": "STA2111-Kuliah-06.pdf",
@@ -11108,11 +11108,11 @@
   {
     "q": "Rancangan Acak Kelompok Lengkap (RAKL) digunakan untuk mengendali dua sumber keragaman lingkungan yang berbeda, misalnya baris dan lajur.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
-    "e": "Benar, RAKL atau Rancahan Blok Lintang membagi lahan menjadi blok-blok untuk mengendali satu sumber keragaman, sedangkan RAKL mengendali dua sumber.",
+    "a": 0,
+    "e": "Benar, RBSL (Rancangan Bujur Sangkar Latin) membagi lahan menjadi blok-blok untuk mengendali satu sumber keragaman, sedangkan RBSL mengendali dua sumber.",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
     "id": 830
@@ -11132,10 +11132,10 @@
   {
     "q": "Pengendalian lingkungan dalam percobaan bertujuan untuk menekan keragaman yang berasal dari sumber selain perlakuan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Prinsip pengendalian lingkungan menekan keragaman yang bukan berasal dari perlakuan agar galat (error) menjadi kecil dan analisis lebih presisi.",
     "topic": "Perancangan Percobaan - Pengendalian Lingkungan",
     "source": "STA2111-Kuliah-06.pdf",
@@ -11420,10 +11420,10 @@
   {
     "q": "Salah satu prinsip dasar dalam perancangan percobaan adalah penentuan perlakuan yang akan diterapkan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Prinsip perancangan percobaan mencakup tiga hal: penentuan perlakuan, penataan percobaan, dan pengukuran respon.",
     "topic": "Perancangan Percobaan - Prinsip Dasar",
     "source": "STA2111-Kuliah-06.pdf",
@@ -11456,10 +11456,10 @@
   {
     "q": "Penamaan rancangan percobaan didasarkan pada rancangan perlakuan dan rancangan lingkungan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Nama rancangan percobaan seperti RAL, RAKL, atau RBSL menggambarkan bagaimana perlakuan dan lingkungan (dalam bentuk kelompok atau blok) disusun.",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
@@ -11538,10 +11538,10 @@
   {
     "q": "Data yang diperoleh dari metode percobaan merupakan respon dari objek penelitian yang telah diberikan suatu perlakuan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Definisi pertama dalam materi menyatakan bahwa data percobaan adalah respon dari objek yang telah diberi perlakuan.",
     "topic": "Perancangan Percobaan - Dasar",
     "source": "STA2111-Kuliah-06.pdf",
@@ -11562,10 +11562,10 @@
   {
     "q": "Pengacakan (randomization) dalam perancangan percobaan bertujuan untuk memberi setiap unit percobaan peluang yang sama untuk menerima suatu perlakuan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Hal ini disebutkan dalam materi sebagai salah satu prinsip dasar perancangan percobaan.",
     "topic": "Perancangan Percobaan - Prinsip Dasar",
     "source": "STA2111-Kuliah-06.pdf",
@@ -11762,10 +11762,10 @@
   {
     "q": "Rancangan Acak Lengkap (RAL) merupakan rancangan yang paling tepat digunakan bila kondisi lingkungan percobaan bersifat homogen.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "RAL digunakan ketika kondisi lingkungan dianggap homogen, sehingga satu-satunya sumber keragaman yang perlu dikelola adalah perlakuan dan galat acak.",
     "topic": "Perancangan Percobaan - Rancangan RAL",
     "source": "STA2111-Kuliah-06.pdf",
@@ -11810,10 +11810,10 @@
   {
     "q": "Rancangan Acak Lengkap (RAL) adalah rancangan yang paling tepat digunakan bila terdapat dua arah sumber keragaman lingkungan yang perlu dikendalikan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "RAL digunakan untuk mengendali satu sumber keragaman lingkungan. Untuk mengendali dua sumber keragaman, digunakan Rancangan Acak Kelompok Lengkap (RAKL).",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
@@ -11822,10 +11822,10 @@
   {
     "q": "Rancangan Acak Kelompok Lengkap (RAKL) digunakan bila kondisi lingkungan percobaan bersifat homogen.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "RAL digunakan pada kondisi lingkungan yang homogen. RAKL digunakan ketika terdapat satu sumber keragaman lingkungan yang heterogen yang perlu dikendalikan.",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
@@ -11848,8 +11848,8 @@
   {
     "q": "Perancangan percobaan mencakup penentuan perlakuan, penataan percobaan, dan pengukuran respon.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
     "a": 0,
     "e": "Hal ini sesuai dengan definisi perancangan percobaan yang tercantum dalam materi.",
@@ -11864,7 +11864,7 @@
       "False"
     ],
     "a": 0,
-    "e": "RAKL digunakan untuk mengendalikan dua sumber keragaman lingkungan, misalnya baris dan kolom dalam lahan.",
+    "e": "RBSL (Rancangan Bujur Sangkar Latin) digunakan untuk mengendalikan dua sumber keragaman lingkungan, misalnya baris dan kolom dalam lahan. RAKL hanya untuk satu sumber.",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
     "id": 887
@@ -11872,10 +11872,10 @@
   {
     "q": "Pada metode survei, objek penelitian diberikan perlakuan tertentu oleh peneliti untuk mengamati responnya.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Pada survei, peneliti tidak memberikan perlakuan, melainkan mengamati kondisi objek apa adanya tanpa intervensi.",
     "topic": "Perancangan Percobaan - Perbedaan dengan Survey",
     "source": "STA2111-Kuliah-06.pdf",
@@ -11884,10 +11884,10 @@
   {
     "q": "Pengacakan (randomization) memberi setiap unit percobaan peluang yang sama untuk menerima suatu perlakuan tertentu.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Prinsip pengacakan memastikan perlakuan diterapkan secara acak pada unit percobaan untuk menghilangkan bias sistematis dan memastikan galat bersifat random.",
     "topic": "Perancangan Percobaan - Prinsip Dasar",
     "source": "STA2111-Kuliah-06.pdf",
@@ -11896,10 +11896,10 @@
   {
     "q": "Penamaan suatu rancangan percobaan didasarkan pada rancangan perlakuan dan rancangan lingkungan yang digunakan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Nama rancangan seperti RAL, RAKL, dan RBSL mencerminkan bagaimana perlakuan dan lingkungan (blok) disusun dalam penataan percobaan.",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
@@ -11978,10 +11978,10 @@
   {
     "q": "Penamaan suatu rancangan percobaan didasarkan pada jenis perlakuan yang diberikan dan tidak mempertimbangkan rancangan lingkungan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Nama rancangan percobaan, seperti RAL atau RAKL, didasarkan pada kombinasi antara rancangan perlakuan dan rancangan lingkungan.",
     "topic": "Perancangan Percobaan - Jenis Rancangan Percobaan",
     "source": "STA2111-Kuliah-06.pdf",
@@ -12116,10 +12116,10 @@
   {
     "q": "Percobaan merupakan salah satu metode pengumpulan data yang melibatkan pemberian perlakuan pada objek penelitian.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Definisi percobaan menyatakan bahwa data yang diperoleh merupakan respon dari objek yang telah diberikan perlakuan.",
     "topic": "Perancangan Percobaan - Definisi",
     "source": "STA2111-Kuliah-06.pdf",
@@ -12140,10 +12140,10 @@
   {
     "q": "Prinsip 'pengendalian lingkungan' dalam perancangan percobaan bertujuan untuk memperbesar keragaman yang berasal dari sumber selain perlakuan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Pengendalian lingkungan bertujuan untuk menekan keragaman yang bukan berasal dari perlakuan agar galat menjadi lebih kecil.",
     "topic": "Perancangan Percobaan - Prinsip Dasar",
     "source": "STA2111-Kuliah-06.pdf",
@@ -12156,7 +12156,7 @@
       "False"
     ],
     "a": 1,
-    "e": "RAKL digunakan bila terdapat dua sumber keragaman lingkungan (misal, waktu dan lokasi), sehingga data dikelompokkan menjadi blok.",
+    "e": "RAKL digunakan bila terdapat SATU sumber keragaman lingkungan yang diketahui. RBSL (Rancangan Bujur Sangkar Latin) yang digunakan untuk DUA sumber keragaman.",
     "topic": "Perancangan Percobaan - Jenis Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
     "id": 909
@@ -12394,10 +12394,10 @@
   {
     "q": "Prinsip pengendalian lingkungan dalam perancangan percobaan bertujuan untuk menekan keragaman yang bukan berasal dari perlakuan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Pengendalian lingkungan dilakukan untuk menekan atau menghilangkan keragaman yang disebabkan oleh faktor-faktor lingkungan, sehingga galat yang terukur lebih kecil.",
     "topic": "Perancangan Percobaan - Prinsip Dasar",
     "source": "STA2111-Kuliah-06.pdf",
@@ -12572,10 +12572,10 @@
   {
     "q": "Salah satu prinsip dasar perancangan percobaan adalah pengacakan (randomisasi) yang bertujuan memberikan setiap unit percobaan peluang yang sama menerima suatu perlakuan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Prinsip pengacakan ini dirumuskan untuk memastikan perlakuan didistribusikan secara acak, sehingga setiap perlakuan memiliki kesempatan yang adil untuk diterapkan pada unit percobaan manapun.",
     "topic": "Perancangan Percobaan - Prinsip Dasar",
     "source": "STA2111-Kuliah-06.pdf",
@@ -12596,10 +12596,10 @@
   {
     "q": "Penamaan suatu rancangan percobaan, seperti Rancangan Acak Kelompok Lengkap (RAKL), didasarkan pada jenis rancangan perlakuan dan rancangan lingkungan yang digunakan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Nama rancangan seperti RAKL terdiri dari 'Rancangan Acak Kelompok' (merujuk pada pengacakan dalam kelompok) dan 'Lengkap' (merujuk pada semua perlakuan ada di dalam setiap kelompok/blok).",
     "topic": "Perancangan Percobaan - Penamaan Rancangan",
     "source": "STA2111-Kuliah-06.pdf",
@@ -12651,10 +12651,10 @@
     "topic": "Penyajian Data - Grafik",
     "q": "Seorang dosen mata kuliah Ekonometrika ingin memberikan feedback kepada mahasiswa mengenai hasil ujian terakhir. Histogram akan memberikan lebih banyak informasi daripada tampilan batang dan daun (stem and leaf).",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Stem-and-leaf plot memberikan lebih banyak informasi karena tidak hanya memperlihatkan bentuk distribusi, tetapi juga mempertahankan titik data nilai aslinya, sedangkan histogram mengelompokkannya ke dalam kelas interval."
   },
   {
@@ -12827,10 +12827,10 @@
     "topic": "Teknik Sampling - Galat",
     "q": "Suatu survei dilakukan untuk menduga rata-rata penurunan pendapatan perkapita perbulan penduduk di suatu provinsi akibat pandemi Covid-19. Penduga (penduga) berdasarkan data survei tersebut dikatakan mempunyai reliabilitas yang tinggi jika nilai ragam penduga tersebut besar.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Reliabilitas/presisi berbanding terbalik dengan ragam (varians). Penduga memiliki reliabilitas tinggi jika nilai ragamnya kecil (standar eror kecil)."
   },
   {
@@ -12839,10 +12839,10 @@
     "topic": "Teknik Sampling - Galat",
     "q": "Sampling-error akan meningkat seiring dengan peningkatan ukuran sampel.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Sampling error (galat baku = sigma / sqrt(n)) akan menurun seiring bertambahnya ukuran sampel (n)."
   },
   {
@@ -12851,10 +12851,10 @@
     "topic": "Teknik Sampling - Stratified",
     "q": "Dengan Penarikan contoh acak berlapis (stratified random sampling) maka objek-objek dari setiap lapisan/sub populasi harus terwakili.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Pada Stratified Random Sampling, sampel acak diambil dari setiap strata/lapisan untuk menjamin seluruh kelompok terwakili."
   },
   {
@@ -12863,10 +12863,10 @@
     "topic": "Kerangka Sampel (Sampling Frame)",
     "q": "Misalkan dalam suatu kegiatan survei, populasi targetnya adalah mahasiswa IPB aktif, maka yang menjadi kerangka contoh (sampling frame) pada survei tersebut adalah seluruh daftar mahasiswa pada Fakultas Pertanian (nomor induk mahasiswa (NIM), nama, program studi, semester).",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Kerangka contoh harus mencakup seluruh elemen populasi target. Jika populasi targetnya seluruh mahasiswa IPB aktif, maka sampling frame yang hanya berisi mahasiswa Fakultas Pertanian adalah salah (under-coverage)."
   },
   {
@@ -12875,10 +12875,10 @@
     "topic": "Jenis-jenis Galat Survei",
     "q": "Jika ada responden yang tidak dapat dihubungi atau menolak, maka itu termasuk galat percontohan (sampling error).",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 0,
+    "a": 1,
     "e": "Responden yang tidak dapat dihubungi atau menolak (non-response) tergolong sebagai galat non-percontohan (non-sampling error)."
   },
   {
@@ -12911,10 +12911,10 @@
     "topic": "Klasifikasi Faktor Percobaan",
     "q": "Seorang mahasiswa MSL ingin menduga tingkat produksi tanaman jagung yang diberikan pupuk nitrogen pada berbagai kelas nitrogen tanah. Kelas nitrogen tanah yang digunakan adalah sedang (75-100%) dan tinggi (>100%). Taraf pada faktor Kelas nitrogen tanah merupakan taraf kualitatif.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
-    "a": 1,
+    "a": 0,
     "e": "Taraf faktor yang dinyatakan dalam kelas/kategori (sedang vs tinggi) dikategorikan sebagai taraf kualitatif."
   },
   {
@@ -12923,8 +12923,8 @@
     "topic": "Rancangan Lingkungan (RAL)",
     "q": "Rancangan acak lengkap adalah salah satu rancangan lingkungan dimana perlakuan-perlakuan diacak secara lengkap terhadap seluruh unit percobaan tanpa batasan apapun, rancangan ini menjamin bahwa setiap unit percobaan memiliki peluang yang sama untuk diterapkan suatu perlakuan.",
     "o": [
-      "False",
-      "True"
+      "True",
+      "False"
     ],
     "a": 0,
     "e": "Pernyataan tersebut sesuai dengan definisi dasar Rancangan Acak Lengkap (RAL) pada unit percobaan yang homogen."
